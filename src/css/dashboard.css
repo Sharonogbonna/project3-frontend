@@ -1,19 +1,14 @@
 body{
+    background-color: darkgray;
+}
+.todo-container{
     background-color: blanchedalmond;
-}
-h1{
+    display: flex;
     text-align: center;
-}
-.completed{
-    text-decoration: line-through;
-}
-.hidden{
-    display: none;
-}
-.active{
-    text-decoration: underline;
-    font-size: 10px;
-}
-li{
-    list-style-type: none;
+    width: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 2rem;
+    margin-left: 3rem;
 }

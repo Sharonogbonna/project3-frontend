@@ -3,8 +3,10 @@ import ToDoList from "../components/ToDo/ListOfTodos"
 
 function Dashboard() {
     return(
-        <div>
+        <div className='container'>
+            <div className='todo-container'>
             <ToDoList/>
+            </div>
         </div>
     )
 }
