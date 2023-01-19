@@ -1,4 +1,4 @@
-import './../css/appTracker.css'
+import '../style.css'
 
 function AppTrackerPage() {
     return(

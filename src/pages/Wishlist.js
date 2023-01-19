@@ -1,4 +1,3 @@
-import './../css/wishlist.css'
 
 function WishlistPage() {
     return(

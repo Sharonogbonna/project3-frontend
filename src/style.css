@@ -1,0 +1,59 @@
+body{
+    background-color: white;
+    color:black;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: gray; */
+    font-size: 12px;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    width: 40vw;
+    margin: auto;
+    border: 3px solid black;
+}
+.dash-nav{
+    float: left;
+}
+.dash-nav div{
+    display: block;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 10px;
+}
+.todo-container{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 2rem;
+    margin-left: 3rem;
+}
+.completed{
+    text-decoration: line-through;
+}
+.hidden{
+    display: none;
+}
+.active{
+    text-decoration: underline;
+    font-size: 10px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}

@@ -22,6 +22,7 @@ export default function Todos() {
   };
   return (
     <div>
+        <h1>My To Do List</h1>
       <CreateTodo />
       <p
                     onClick={showDisplay}
@@ -40,7 +41,7 @@ export default function Todos() {
           return (
             <div>
               <li>
-                <a href={`/${todo._id}`}>
+                <a href={`/this-todo/${todo._id}`}>
                   <h3 className={`${todo.complete ? "completed" : ""}`}>
                     {todo.title}
                   </h3>

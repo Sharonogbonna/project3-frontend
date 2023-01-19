@@ -1,4 +1,4 @@
-import './../css/groceries.css'
+
 
 function GroceryPage() {
     return(

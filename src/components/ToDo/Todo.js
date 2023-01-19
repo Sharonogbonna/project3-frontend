@@ -16,16 +16,16 @@ function Todo() {
 
   const deleteTheTodo = () => {
     deleteTodo(id)
-    nav('/')
+    nav('/todos')
   }
   return (
     <div>
       <h2>{todo.title}</h2>
       <h3>description:{todo.description}</h3>
       <h4>Completed: {`${todo.complete ? 'Done!' : 'No'}`}</h4>
-      <button onClick={() => {nav(`/${id}/edit`)}}>Edit</button>
+      <button onClick={() => {nav(`/edit-this-todo/${id}/edit`)}}>Edit</button>
       <button onClick={deleteTheTodo}>Delete</button>
-      <button onClick={() => {nav('/')}}>Main</button>
+      <button onClick={() => {nav('/todos')}}>Main</button>
     </div>
   );
 }

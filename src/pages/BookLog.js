@@ -1,5 +1,3 @@
-import './../css/bookLog.css'
-
 function BookLogPage() {
     return(
         <div className='container'>

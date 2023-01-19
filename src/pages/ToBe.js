@@ -1,4 +1,3 @@
-import './../css/tobe.css'
 
 function ToBePage() {
     return(

@@ -14,10 +14,10 @@ export default function Form({ props }){
         }
         if(props._id){
             editTodo(props._id, todo)
-            nav(`/${id}`)
+            nav(`/this-todo/${id}`)
         }else{
             createTodo(todo)
-            nav('/')
+            nav('/todos')
         }
         
     }
