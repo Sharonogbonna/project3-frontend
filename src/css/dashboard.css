@@ -1,0 +1,19 @@
+body{
+    background-color: blanchedalmond;
+}
+h1{
+    text-align: center;
+}
+.completed{
+    text-decoration: line-through;
+}
+.hidden{
+    display: none;
+}
+.active{
+    text-decoration: underline;
+    font-size: 10px;
+}
+li{
+    list-style-type: none;
+}
