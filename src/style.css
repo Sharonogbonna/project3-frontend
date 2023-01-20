@@ -22,8 +22,17 @@ form{
     margin: auto;
     border: 3px solid black;
 }
+.container{
+    width: 90vw;
+    margin: auto;
+    /* display: grid;
+    grid-template-columns: auto; */
+    display: flex;
+}
 .dash-nav{
     float: left;
+    background-color: black;
+    border-radius: 2rem;
 }
 .dash-nav div{
     display: block;
@@ -43,6 +52,12 @@ form{
     border-radius: 2rem;
     margin-left: 3rem;
 }
+.grocery-container{
+    background-color: darkcyan;
+    width: 5rem;
+    padding: 20px;
+    border-radius: 2rem;
+}
 .completed{
     text-decoration: line-through;
 }
@@ -56,4 +71,56 @@ form{
 ul{
     list-style: none;
     padding: 0;
+}
+body{
+    background-color: darkgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.grocery-form{
+    color: rgb(146, 146, 188);
+    background-color: black;
+    margin-left: 1rem;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    padding-bottom: 10px;
+    box-shadow:8px 8px 0px gray, 0 1px 10px darkblue;
+    border-radius: .5rem;
+}
+.grocery-form p{
+    text-align: left;
+    margin: auto;
+    margin-left:1rem;
+}
+.grocery-form input{
+    width: 80%;
+    margin: auto;
+}
+.grocery-form h3{
+    font-weight: bold;
+    -webkit-text-stroke: 1px lightgray;
+}
+.page-title{
+    color: rgb(146, 146, 188);
+    font-size: 70px;
+    -webkit-text-stroke: 2.5px gray;
+    text-shadow:5px 5px 0px black, 0 5px 5px darkblue;
+}
+.items{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 15rem);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2.5rem;
+    padding-left: 2.5rem;
+}
+.item-card{
+    background-color: lightgray;
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow:10px 10px 0px black, 0 1px 10px darkblue;
 }
