@@ -1,35 +1,34 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/todos'
+const baseURL = 'http://localhost:3001/applications'
 
 //show all
-export const getTodos = () => {
+export const getApplications = () => {
     const URL = baseURL
-    //using axios get functionality to get our todos
     const response = axios.get(URL)
     return response
 }
 //show one
-export const getTodo = (id) => {
+export const getApp = (id) => {
     const URL = `${baseURL}/${id}`
     const response = axios.get(URL)
     return response
 }
 //edit the todo
-export const editTodo = (id, updatedTodo) => {
+export const editApp = (id, updatedApp) => {
     const URL = `${baseURL}/${id}`
-    const response = axios.put(URL, updatedTodo)
+    const response = axios.put(URL, updatedApp)
     return response
 }
 //create todo
-export const createTodo = (todo) => {
+export const createApp = (App) => {
     const URL = baseURL
-    const response = axios.post(URL, todo)
+    const response = axios.post(URL, App)
     return response
 }
 //delete the todo
-export const deleteTodo = (id) => {
+export const deleteApp = (id) => {
     const URL = `${baseURL}/${id}`
     const response = axios.delete(URL)
     return response
