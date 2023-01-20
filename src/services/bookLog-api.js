@@ -6,7 +6,6 @@ const baseURL = 'http://localhost:3001/booklog'
 //show all
 export const getLogs = () => {
     const URL = baseURL
-    //using axios get functionality to get our todos
     const response = axios.get(URL)
     return response
 }
