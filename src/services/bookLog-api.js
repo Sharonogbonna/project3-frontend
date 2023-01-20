@@ -1,7 +1,7 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'https://byathread-api.onrender.com/booklog'
+const baseURL = 'http://localhost:3001/booklog'
 
 //show all
 export const getLogs = () => {

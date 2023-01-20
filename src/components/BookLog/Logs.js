@@ -36,7 +36,7 @@ const ListOfLogs = () => {
                   
                   <h3>Rating: {log.rating}/5 stars</h3>
                   <p>{log.summary}</p>
-                  <p>"{log.quotes[Math.floor(Math.random() * log.quotes.length)]}"</p>
+                  <p>"{log.quotes[Math.floor(Math.random() * log.quotes.length)].trim()}"</p>
               </li>
             </div>
           );

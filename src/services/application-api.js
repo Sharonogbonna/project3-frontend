@@ -1,7 +1,7 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'https://byathread-api.onrender.com/applications'
+const baseURL = 'http://localhost:3001/applications'
 
 //show all
 export const getApplications = () => {

@@ -30,7 +30,7 @@ const Log = () => {
       {log.quotes ? <div className="quotes">
         {log.quotes.map(quote =>{
             return(
-                <p>"{quote}"</p>
+                <p>"{quote.trim()}"</p>
             )
         })}
       </div> : <div></div>}

@@ -1,7 +1,7 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'https://byathread-api.onrender.com/tobes'
+const baseURL = 'http://localhost:3001/tobes'
 
 //show all
 export const getToBes = () => {
