@@ -1,7 +1,7 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/wishlist'
+const baseURL = 'https://byathread-api.onrender.com/wishlist'
 
 //show all
 export const getWishes = () => {

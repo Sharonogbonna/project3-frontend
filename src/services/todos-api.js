@@ -1,7 +1,7 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/todos'
+const baseURL = 'https://byathread-api.onrender.com/todos'
 
 //show all
 export const getTodos = () => {
