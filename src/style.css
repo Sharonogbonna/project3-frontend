@@ -65,6 +65,34 @@ form{
     border-radius: 2rem;
     font-size: 10px;
 }
+.app-container{
+    font-size: 10px;
+    background-color: darkolivegreen;
+    width: 5rem;
+    padding: 20px;
+    border-radius: 2rem;
+}
+.log-container{
+    font-size: 10px;
+    background-color: darkseagreen;
+    width: 5rem;
+    padding: 20px;
+    border-radius: 2rem;
+}
+.wishlist-container{
+    font-size: 10px;
+    background-color: darkslategray;
+    width: 5rem;
+    padding: 20px;
+    border-radius: 2rem;
+}
+.tbr-container{
+    font-size: 10px;
+    background-color: darkslateblue;
+    width: 5rem;
+    padding: 20px;
+    border-radius: 2rem;
+}
 .completed{
     text-decoration: line-through;
 }
