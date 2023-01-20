@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getTodos } from "../../services/todos-api";
+import { deleteTodo, getTodos } from "../../services/todos-api";
 import CreateTodo from "./CreateTodo";
 
 export default function Todos() {
@@ -46,6 +46,7 @@ export default function Todos() {
                     {todo.title}
                   </h3>
                 </a>
+                <button onClick={deleteTodo}>Delete</button>
                 <div className="description">
 
                   <p className={`${display ? "" : "hidden"}`}>

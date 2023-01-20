@@ -25,6 +25,9 @@ form{
 .container{
     width: 90vw;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 25px;
+    border-radius: 2rem;
     /* display: grid;
     grid-template-columns: auto; */
     display: flex;
@@ -45,18 +48,22 @@ form{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 5rem;
+    width: fit-content;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border-radius: 2rem;
     margin-left: 3rem;
+    font-size: 10px;
+    /* height: 10rem;
+    overflow:scroll; */
 }
 .grocery-container{
     background-color: darkcyan;
     width: 5rem;
     padding: 20px;
     border-radius: 2rem;
+    font-size: 10px;
 }
 .completed{
     text-decoration: line-through;
@@ -67,6 +74,7 @@ form{
 .active{
     text-decoration: underline;
     font-size: 10px;
+    margin: 0;
 }
 ul{
     list-style: none;
