@@ -6,7 +6,7 @@ import { editLog, getLog } from '../../services/bookLog-api'
 const EditLog = () => {
     const {id} = useParams()
     const nav = useNavigate()
-    const [data, setData] = useState({})
+    const [data, setData] = useState(null)
 
     useEffect(() => {
         getLog(id) // getting the todo that matches this id
@@ -21,13 +21,14 @@ const EditLog = () => {
             rating: e.target.rating.value, 
             summary: e.target.summary.value, 
             opinion: e.target.opinion.value, 
-            // quotes: e.target.quotes.value.push(e.target.quote.value.split('#'))
+            quotes: e.target.quotes.value.split('#')
         }
         editLog(id, updatedLog)
         nav(`/this-book/${id}`)
     }
   return (
     <div>
+    {data ? <div>
         <form onSubmit={editTheLog} className="log-form">
         <h4>Edit a Log</h4>
             Title: <input type='text' name="title" placeholder="title" defaultValue={data.title}/> <br/>
@@ -37,9 +38,10 @@ const EditLog = () => {
             Rating: <input type='number' name="rating" placeholder='# out of 5' defaultValue={data.rating}/> <br/>
            Summary: <textarea type='text' name='summary' placeholder="summary" id='summary'defaultValue={data.summary}/><br/>
              Opinion: <textarea type='text' name='opinion' placeholder="opinion" id='opinion'defaultValue={data.opinion}/><br/>
-            Favorite Quotes: <span>(use # to separate quotes)</span><textarea type='text' name='quotes' placeholder="quotes" id='quotes'defaultValue={data.quotes}/><br/>
+            Favorite Quotes: <span>(use # to separate quotes)</span><textarea type='text' name='quotes' placeholder="quotes" id='quotes'defaultValue={data.quotes.join('#')}/><br/>
             <input type='submit'value={`Edit Log`}/>
       </form>
+    </div> : <div></div>}
     </div>
   )
 }
