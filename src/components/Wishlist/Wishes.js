@@ -26,7 +26,7 @@ const Wishes = () => {
               <li>
                   <Link to={`/this-wish/${wish._id}`}> <h3 className={`${wish.received ? "completed" : ""}`}>
                     {wish.name} </h3></Link>
-                    <a href={wish.link}><h5>from {wish.store}</h5></a>
+                    <a href={wish.link} target="_blank"><h5>from {wish.store}</h5></a>
                  
               </li>
             </div>

@@ -21,7 +21,7 @@ const Wish = () => {
   return (
     <div className="wish-card">
       <h1>{wish.name}</h1>
-      <a href={wish.link}><h3>from {wish.store}</h3></a>
+      <a href={wish.link} target="_blank"><h3>from {wish.store}</h3></a>
       <h3>Price: ${wish.price}</h3>
       <p>Why? {wish.reason}</p>
       <h4>Received? {`${wish.done ? "Yes" : "No"}`}</h4>

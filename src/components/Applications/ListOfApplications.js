@@ -15,7 +15,7 @@ const ListOfApplications = () => {
   return (
     <div>
       <ul>
-        {appList.map((app) => {
+        {appList.map((app, key) => {
           return (
             <div>
               <li>
