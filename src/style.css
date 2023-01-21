@@ -2,7 +2,7 @@ body{
     background-color: white;
     color:black;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 .nav{
     display: flex;
@@ -12,9 +12,7 @@ body{
     font-size: 12px;
     margin: 0;
 }
-h1{
-    text-align: center;
-}
+
 form{
     display: flex;
     flex-direction: column;

@@ -21,7 +21,8 @@ function Todo() {
   return (
     <div>
       <h2>{todo.title}</h2>
-      <h3>description:{todo.description}</h3>
+      <h3>Description:</h3>
+      <p>{todo.description}</p>
       <h4>Completed: {`${todo.complete ? 'Done!' : 'No'}`}</h4>
       <button onClick={() => {nav(`/edit-this-todo/${id}/edit`)}}>Edit</button>
       <button onClick={deleteTheTodo}>Delete</button>
