@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { getToBes } from '../../services/toBe-api';
+import CreateToBe from './CreateToBe';
+import { Link } from 'react-router-dom'
 
 
 const ToBes = () => {
@@ -15,14 +17,18 @@ const ToBes = () => {
   }, []);
   return (
     <div>
+        <div>
+            <CreateToBe/>
+        </div>
       <ul>
         {toBeList.map((toBe) => {
           return (
             <div>
-              <li>
+              <li><Link to={`/this-tbr/${toBe._id}`}>
                   <h3 className={`${toBe.done ? "completed" : ""}`}>
-                    {toBe.category} called {toBe.title} recommended by {toBe.recommender}
-                  </h3>
+                   {toBe.title}
+                  </h3></Link>
+                  <h5>A {toBe.category} recommended by {toBe.recommender}</h5>
               </li>
             </div>
           );

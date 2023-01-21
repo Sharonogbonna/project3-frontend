@@ -46,7 +46,6 @@ export default function Todos() {
                     {todo.title}
                   </h3>
                 </a>
-                <button onClick={deleteTodo}>Delete</button>
                 <div className="description">
 
                   <p className={`${display ? "" : "hidden"}`}>
