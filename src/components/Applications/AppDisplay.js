@@ -108,11 +108,6 @@ const AppDisplay = () => {
           <h3>You are no longer interested in this position</h3>
         )}
       </div>
-      {/* {app.offer ? <h2>They offered you ${app.offer}k!</h2> : <h2></h2>}
-      <div>{renderDescription()}</div>
-      {!app.compensation ? <p>There was no pay range stated.</p> : <p>Pay range is typically {app.compensation}</p>}
-      {app.benefits ? <p>They offer good benefits!</p> : <p>There were no benefits listed or they were not what you were looking for.</p>}
-      {renderResponse()} */}
       <button
         onClick={() => {
           nav(`/edit-this-app/${id}/edit`);
