@@ -47,7 +47,7 @@ export default function Todos() {
                   </h3>
                 </a>
                 <div className="description">
-
+                  <h6 className="due-date">Due {new Date(todo.due).toDateString()}</h6>
                   <p className={`${display ? "" : "hidden"}`}>
                     {todo.description}
                   </p>

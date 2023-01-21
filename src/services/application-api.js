@@ -22,9 +22,9 @@ export const editApp = (id, updatedApp) => {
     return response
 }
 //create todo
-export const createApp = (App) => {
+export const createApp = (app) => {
     const URL = baseURL
-    const response = axios.post(URL, App)
+    const response = axios.post(URL, app)
     return response
 }
 //delete the todo

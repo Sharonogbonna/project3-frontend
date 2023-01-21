@@ -21,7 +21,9 @@ function Todo() {
   return (
     <div>
       <h2>{todo.title}</h2>
-      <h3>Description:</h3>
+      <h6>Created on {new Date(todo.created).toString()}</h6>
+      <h3>Due on {new Date(todo.due).toDateString()}</h3>
+      <h4>Description:</h4>
       <p>{todo.description}</p>
       <h4>Completed: {`${todo.complete ? 'Done!' : 'No'}`}</h4>
       <button onClick={() => {nav(`/edit-this-todo/${id}/edit`)}}>Edit</button>

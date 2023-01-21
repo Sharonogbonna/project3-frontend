@@ -10,7 +10,9 @@ export default function Form({ props }){
         const todo = {
             title: e.target.title.value, 
             description: e.target.description.value,
-            complete: e.target.complete.checked
+            complete: e.target.complete.checked,
+            due: e.target.due.value,
+            created: Date.now()
         }
         if(props._id){
             editTodo(props._id, todo)
@@ -25,8 +27,9 @@ export default function Form({ props }){
         //fix this to have ternary operator for submit button
         <form onSubmit={handleSubmit}>
             <h3>Add Item To Do</h3>
-            <input type='text' name="title" placeholder="title" defaultValue={props.title}/> <br/>
-            <textarea type="text" name="description" placeholder="description" defaultValue={props.description}/>
+            Title: <input type='text' name="title" placeholder="title" defaultValue={props.title}/> <br/>
+            Due Date:<p>(current due date is {new Date(props.due).toDateString()})</p> <input type="date" name="due" /> <br/>
+            Details: <textarea type="text" name="description" placeholder="description" defaultValue={props.description}/>
             <input type='checkbox' name="complete" defaultChecked={props.complete}/>
             <input type='submit' value='Edit To Do'/>
         </form>
