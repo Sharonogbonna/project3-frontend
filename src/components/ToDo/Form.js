@@ -28,7 +28,7 @@ export default function Form({ props }){
         <form onSubmit={handleSubmit}>
             <h3>Add Item To Do</h3>
             Title: <input type='text' name="title" placeholder="title" defaultValue={props.title}/> <br/>
-            Due Date:<p>(current due date is {new Date(props.due).toDateString()})</p> <input type="date" name="due" /> <br/>
+            Due Date:{props.due ? <p>(current due date is {new Date(props.due).toDateString()})</p> : <p></p>} <input type="date" name="due" /> <br/>
             Details: <textarea type="text" name="description" placeholder="description" defaultValue={props.description}/>
             <input type='checkbox' name="complete" defaultChecked={props.complete}/>
             <input type='submit' value='Edit To Do'/>

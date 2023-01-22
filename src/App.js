@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 //css
-// import './default.css'
+import './default.css'
 import './style.css'
-
 
 //#region //components
 import Dashboard from "./components/Dashboard"
@@ -25,7 +24,6 @@ import EditWish from "./components/Wishlist/EditWish";
 import ToBes from "./components/ToBe/ToBes";
 import ToBe from "./components/ToBe/ToBe";
 import EditToBe from "./components/ToBe/EditToBe";
-
 //#endregion
 
 

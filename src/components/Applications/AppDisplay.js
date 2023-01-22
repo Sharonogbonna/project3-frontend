@@ -70,11 +70,13 @@ const AppDisplay = () => {
   return (
     <div className="app-display">
       <h2>
+        {/* When user clicks on position it takes them to application */}
         <a href={app.appLink} target="_blank">
           {app.position}
         </a>{" "}
         at {app.company}
       </h2>
+      {/* If user enters application date it displays if not it says you haven't applied */}
       {!app.dateApplied ? (
         <h5>You haven't applied yet</h5>
       ) : (
@@ -85,6 +87,7 @@ const AppDisplay = () => {
       )}
       <h3>Location: {app.location}</h3>
       <div>
+        {/* if the user is no longer interested it does not display other details */}
         {app.stillInterested ? (
           <div>
             {app.offer ? <h2>They offered you ${app.offer}k!</h2> : <h2></h2>}

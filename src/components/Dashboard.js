@@ -10,14 +10,15 @@ import AppList from "./Applications/ListOfApplications";
 import LogList from "./BookLog/ListOfLogs";
 import TBRList from "./ToBe/ListOfToBes";
 import WishList from "./Wishlist/ListOfWishes";
+import ListOfNav from "./ListOfNav";
 
 function Dashboard() {
   return (
     <div>
-      <h1>By a Thread</h1>
+      <h1 className="title" >By a Thread</h1>
       <div className="container">
         <div className="dash-nav">
-          <Nav />
+          <ListOfNav/>
         </div>
         <div className="todo-container">
           <Link to="/todos">

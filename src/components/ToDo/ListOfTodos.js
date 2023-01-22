@@ -21,7 +21,7 @@ export default function Todos() {
     setDisplay(false);
   };
   return (
-    <div>
+    <div className="toggle-description">
       <p
                     onClick={showDisplay}
                     className={`${display ? "hidden" : "active"}`}
@@ -39,12 +39,12 @@ export default function Todos() {
           return (
             <div>
               <li>
-                  <h3 className={`${todo.complete ? "completed" : ""}`}>
+                  <h3 className={`todo-title ${todo.complete ? " completed" : ""}`}>
                     {todo.title}<input type='checkbox' defaultChecked={todo.complete}/>
                   </h3>
                 <div className="description">
 
-                  <p className={`${display ? "" : "hidden"}`}>
+                  <p className={` ${display ? "" : " hidden"}`}>
                     {todo.description}
                   </p>
                 </div>

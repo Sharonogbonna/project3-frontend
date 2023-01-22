@@ -1,14 +1,205 @@
-body{
+:root {
+  --brightPink: #e4159e;
+  --pink: #d1439e;
+  --yellow: #eac438;
+  --orange: #fb5333;
+  --brightPurple: #9f0eb8;
+  --purple: #54276f;
+  --lightBlue: #1da5be;
+  --blue: #325995;
+  --darkBlue: #131c5a;
+  --seafoam: #08cea3;
+  --green: #38cd2c;
+  --header: "Joystix";
+  --title: "Discopia"
+}
+* {
+  font-family: "TypeTwo";
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  body {
+    background-color: var(--blue);
+    color: #ffffff;
+  }
+  .title {
+    font-family: var(--title);
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: relative;
+  }
+  .navBar {
+    position: relative;
+  }
+
+  .navBar button {
+    position: fixed;
+    right: 40px;
+    top: 2rem;
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+  .menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    padding-top: 3rem;
+    background: var(--purple);
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 250px;
+    z-index: 9;
+  }
+  .menuNav.showMenu {
+    width: 100%;
+  }
+
+  .navBar a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .menuNav li:first-child {
+    margin-top: 7rem;
+  }
+  .completed {
+    text-decoration: line-through;
+  }
+  .hidden {
+    display: none;
+  }
+  .active {
+    text-decoration: underline;
+    font-size: 10px;
+    margin: 0;
+  }
+  .container{
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 10px;
+  }
+  .dash-nav div{
+    display: none;
+  }
+  a h3{
+    color: black;
+    font-family: var(--header);
+    background-color: lightgray;
+    text-align: center;
+    font-size: 13px;
+    font-weight: lighter;
+    border: 2px inset gray ;
+  }
+  .todo-container{
+    margin-top: 1rem;
+    background-color: #ffffff;
+    color: var(--darkBlue);
+    grid-column: 1;
+    grid-row: 1;
+    padding: 5px;
+    border: 5px outset var(--darkBlue);
+    overflow: scroll;
+  }
+  .todo-container div{
+    margin: 3px 0 3px 0;
+   }
+  .todo-title{
+    font-size: 15px;
+  }
+   .todo-description{
+    font-size: 15px;
+   }
+   .toggle-description p{
+    margin-top: 3px;
+    font-size: 10px;
+   }
+   .grocery-container{
+    margin-top: 1rem;
+    background-color: #ffffff;
+    color: var(--brightPurple);
+    padding: 5px;
+    border: 5px outset var(--brightPurple);
+    grid-row: 1;
+    overflow: scroll;
+   }
+   .grocery-container div{
+    margin: 3px 0 3px 0;
+   }
+   .tbr-container{
+    background-color: #ffffff;
+    color: var(--orange);
+    padding: 5px;
+    border: 5px outset var(--orange);
+    grid-row: 2;
+    grid-column: 1/3;
+    overflow: scroll;
+   }
+   .tbr-container div{
+    margin: 3px 0 3px 0;
+   }
+   .wishlist-container{
+    background-color: #ffffff;
+    color: var(--seafoam);
+    padding: 5px;
+    border: 5px outset var(--seafoam);
+    grid-row: 3;
+    overflow: scroll;
+   }
+   .wishlist-container div{
+    margin: 3px 0 3px 0;
+   }
+   .app-container{
+    background-color: #ffffff;
+    color: var(--pink);
+    padding: 5px;
+    border: 5px outset var(--pink);
+    overflow: scroll;
+    grid-row: 3;
+    grid-column: 2;
+   }
+   .app-container div{
+    margin: 3px 0 3px 0;
+   }
+   .log-container{
+    background-color: #ffffff;
+    color: var(--green);
+    padding: 5px;
+    border: 5px outset var(--green);
+    overflow: scroll;
+    grid-column: 1/3;
+    grid-row: 4;
+   }
+   .log-container div{
+    margin: 3px 0 3px 0;
+   }
+
+}
+
+/* body{
     background-color: white;
     color:black;
     margin: auto;
-    /* text-align: center; */
+    text-align: center;
 }
 .nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* background-color: gray; */
+    background-color: gray;
     font-size: 12px;
     margin: 0;
 }
@@ -29,8 +220,8 @@ form{
     background-color: rgba(0, 0, 0, 0.596);
     padding: 25px;
     border-radius: 2rem;
-    /* display: grid;
-    grid-template-columns: auto; */
+    display: grid;
+    grid-template-columns: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,8 +248,8 @@ form{
     border-radius: 2rem;
     margin-left: 3rem;
     font-size: 10px;
-    /* height: 10rem;
-    overflow:scroll; */
+    height: 10rem;
+    overflow:scroll;
 }
 .grocery-container{
     background-color: darkcyan;
@@ -111,7 +302,6 @@ ul{
     padding: 0;
 }
 body{
-    background-color: darkgray;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .grocery-form{
@@ -164,4 +354,4 @@ body{
 }
 textarea{
     height: 15rem;
-}
+} */

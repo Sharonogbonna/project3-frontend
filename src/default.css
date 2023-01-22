@@ -5,17 +5,16 @@
 
 /* Purpose: undo some of the default styling of common (X)HTML browsers */
 
-
 /* link underlines tend to make hypertext less readable, 
    because underlines obscure the shapes of the lower halves of words */
-   :link,:visited { text-decoration:none; color: darkgray }
+   :link,:visited { text-decoration:none }
 
    /* no list-markers by default, since lists are used more often for semantics */
    ul,ol { list-style:none }
    
    /* avoid browser default inconsistent heading font-sizes */
    /* and pre/code too */
-   h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+   /* h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; } */
    
    /* remove the inconsistent (among browsers) default ul,ol padding or margin  */
    /* the default spacing on headings does not match nor align with 

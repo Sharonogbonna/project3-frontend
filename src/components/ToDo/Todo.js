@@ -22,7 +22,7 @@ function Todo() {
     <div>
       <h2>{todo.title}</h2>
       <h6>Created on {new Date(todo.created).toString()}</h6>
-      <h3>Due on {new Date(todo.due).toDateString()}</h3>
+       {todo.due ? <h3>Due on {new Date(todo.due).toDateString()}</h3>: "No Due Date"}
       <h4>Description:</h4>
       <p>{todo.description}</p>
       <h4>Completed: {`${todo.complete ? 'Done!' : 'No'}`}</h4>
