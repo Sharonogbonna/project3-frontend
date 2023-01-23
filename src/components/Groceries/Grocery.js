@@ -21,12 +21,14 @@ export default function Grocery() {
   };
 
   return (
-    <div className="item-card">
-      <h1>{grocery.item}</h1>
-      <h3>Brand: {grocery.brand}</h3>
-      <h3>From: {grocery.store}</h3>
-      <h3>Units: {grocery.unit}</h3>
-      <h3>Quantity: {grocery.quantity}</h3>
+    <div className="grocery-card">
+      <h2>{grocery.item}</h2>
+      <div id="grocery-details">
+      {grocery.brand ? <h3>Brand: {grocery.brand}</h3> : <h3></h3>}
+      {grocery.store ? <h3>From: {grocery.store}</h3> : <h3></h3>}
+      {grocery.unit ? <h3>Units: {grocery.unit}</h3> : <h3></h3>}
+      {grocery.quantity ? <h3>Quantity: {grocery.quantity}</h3> : <h3></h3>}
+      </div>
       <h4>Purchased: {`${grocery.isPurchased ? "Yes" : "No"}`}</h4>
       <button
         onClick={() => {

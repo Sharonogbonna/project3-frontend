@@ -41,7 +41,7 @@
     margin-top: 25px;
     position: relative;
     text-shadow: 2px 2px var(--lightBlue), 4px 4px var(--yellow);
-    font-size: 2.2em;
+    font-size: 32px;
   }
 
   #tbr-list {
@@ -120,6 +120,9 @@
     cursor: pointer;
     background: transparent;
     border: none;
+  }
+  #form{
+    margin-top: 4em;
   }
   .container {
     width: 90vw;
@@ -247,7 +250,7 @@
     margin-bottom: 10px;
     font-size: 15px;
   }
-  #form-title{
+  #form-title, .form-title{
     font-family: var(--header);
     font-size: 20px;
     text-align: center;
@@ -270,9 +273,7 @@
     padding: 2px;
     align-self: flex-end
   }
-  #form{
-    margin-top: 4em;
-  }
+  
   .todos{
     max-width: 85vw;
     margin: auto;
@@ -350,7 +351,7 @@
     font-size: 30px
   }
   .groceries{
-    max-width: 85vw;
+    width: 85vw;
     margin: auto;
   }
   .groceries ul{
@@ -382,6 +383,56 @@
     font-size: 13px;
     color: black;
     }
+  .grocery-form{
+    margin: auto;
+    border: 5px inset gray;
+    background-color: lightgray;
+    color: var(--brightPurple);
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #grocery-form-title{
+    border-bottom: 2px solid var(--brightPurple);
+  }
+  .grocery-form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+  }
+  .grocery-form input[name="submit"]{
+    max-width: fit-content;
+    padding: 2px;
+    align-self: flex-end
+  }
+  .grocery-card{
+    width: 70vw;
+    margin: auto;
+    margin-top: 40%;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    border: 5px outset gray;
+    height: 15rem;
+  }
+  .grocery-card h2{
+    font-family: var(--header);
+    color: var(--brightPurple);
+    font-size: 25px;
+  }
+  .grocery-card h3, .grocery-card h4{
+    margin: .5rem;
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .grocery-card h4{
+    text-align: center;
+    color: gray;
+  }
 
 }
 
