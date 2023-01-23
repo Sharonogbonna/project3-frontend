@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import { deleteTodo, getTodos } from "../../services/todos-api";
 import CreateTodo from "./CreateTodo";
+import { HiMinus } from "react-icons/hi";
+import { AiOutlinePlus } from "react-icons/ai";
 
 export default function Todos() {
   //state to hold data
   const [toDoList, setToDoList] = useState([]);
   const [display, setDisplay] = useState(false);
+  const [createButton, setCreateButton] = useState(false)
 
   useEffect(() => {
     getTodos()
-      //.then is the promise, the data we get back
-      //once we get the data back 'then what'
       .then((res) => setToDoList(res.data));
   }, []);
 
@@ -20,15 +21,31 @@ export default function Todos() {
   const hideDisplay = () => {
     setDisplay(false);
   };
+  const handleToggle = () => {
+    setCreateButton((prev) => !prev)
+  }
   return (
     <div className="all-of-todos-page">
+      <div className="create-button">
+      <button onClick={handleToggle}>
+        {createButton ? (
+          <HiMinus style={{ color: "#1da5be", width: "25px", height: "25px" }} />
+        ) : (
+          <AiOutlinePlus
+            style={{ color: "#1da5be", width: "25px", height: "25px" }}
+          />
+        )}
+      </button>
+      </div>
       <h1 className="title" id="my-todo-list">My To Do List</h1>
-      <CreateTodo/>
+      <div className={createButton ? "" : "hidden"}>
+        <CreateTodo/>
+      </div>
       <div className="todos">
-      <p onClick={showDisplay} className={`${display ? "hidden" : "active"}`}>
+      <p onClick={showDisplay} className={`description-btn ${display ? " hidden" : " active"}`}>
         click to show descriptions
       </p>
-      <p onClick={hideDisplay} className={`${display ? "active" : "hidden"}`}>
+      <p onClick={hideDisplay} className={`description-btn ${display ? " active" : " hidden"}`}>
         click to hide descriptions
       </p>
       <ul>
@@ -37,7 +54,7 @@ export default function Todos() {
             <div>
               <li>
                 <a href={`/this-todo/${todo._id}`}>
-                  <h3 className={`${todo.complete ? "completed" : ""}`}>
+                  <h3 className={`todos-titles ${todo.complete ? " completed" : ""}`}>
                     {todo.title}
                   </h3>
                 </a>
@@ -49,7 +66,7 @@ export default function Todos() {
                       </h6>
                     </strong>
                   ) : (
-                    <h6>No due date</h6>
+                    <h6 className="due-date">No due date</h6>
                   )}
                   <p className={`${display ? "" : "hidden"}`}>
                     {todo.description}

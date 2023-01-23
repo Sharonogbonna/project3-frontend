@@ -219,6 +219,17 @@
     margin-left: 20px;
     margin-bottom: 20px;
   }
+  .create-button{
+    position: relative;
+  }
+  .create-button button{
+    position: fixed;
+    right: 40px;
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
   .todo-form{
     margin: auto;
     border: 5px inset gray;
@@ -251,8 +262,39 @@
     align-self: flex-end
   }
   .todos{
-    width: 90vw;
+    max-width: 85vw;
     margin: auto;
+  }
+  .description-btn{
+   margin-bottom: 1em;
+   text-align: right;
+   font-size: 15px;
+  }
+  .todos ul{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    padding: 0;
+    width: 100vw;
+    gap: 3px;
+  }
+  .todos-titles{
+    width: 105px;
+    color: var(--darkBlue);
+    border-color: var(--darkBlue);
+    padding: 3px;
+  }
+  .description{
+    background-color: lightgray;
+    color: black;
+    width: 105px;
+    border: 2px inset var(--darkBlue);
+    border-top: none;
+    padding: 3px;
+  }
+  .due-date{
+    color: var(--lightBlue);
+    font-size: 15px;
+    padding-bottom: 3px;
   }
 }
 
