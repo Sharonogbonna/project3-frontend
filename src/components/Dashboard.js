@@ -11,10 +11,12 @@ import LogList from "./BookLog/ListOfLogs";
 import TBRList from "./ToBe/ListOfToBes";
 import WishList from "./Wishlist/ListOfWishes";
 import ListOfNav from "./ListOfNav";
+import CreateNavBar from "./CreateNavBar";
 
 function Dashboard() {
   return (
     <div>
+      <CreateNavBar/>
       <h1 className="title" >By a Thread</h1>
       <div className="container">
         <div className="dash-nav">

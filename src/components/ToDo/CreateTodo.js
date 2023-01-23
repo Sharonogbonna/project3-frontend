@@ -14,12 +14,12 @@ export default function CreateTodo() {
 return(
     <div>
         
-        <form onSubmit={createTheTodo} className="todo-form">
-        <h4>Create a Todo</h4>
+        <form onSubmit={createTheTodo} className="todo-form" id="todo-form">
+        <h4 id="form-title">Create a To Do</h4>
             Title: <input type='text' name="title" placeholder="title"/> <br/>
             Due Date: <input type="date" name="due"/><br/>
             Details: <textarea type='text' name='description' placeholder="description" id='dsc'/><br/>
-            <input type='submit'/>
+            <input type='submit' name="submit"/>
         </form>
     </div>
 )

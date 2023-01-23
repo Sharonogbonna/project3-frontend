@@ -6,7 +6,7 @@ export default function Todos() {
   //state to hold data
   const [toDoList, setToDoList] = useState([]);
   const [display, setDisplay] = useState(false);
-  
+
   useEffect(() => {
     getTodos()
       //.then is the promise, the data we get back
@@ -21,21 +21,16 @@ export default function Todos() {
     setDisplay(false);
   };
   return (
-    <div>
-        <h1>My To Do List</h1>
-      <CreateTodo />
-      <p
-                    onClick={showDisplay}
-                    className={`${display ? "hidden" : "active"}`}
-                  >
-                    click to show descriptions
-                  </p>
-                  <p
-                    onClick={hideDisplay}
-                    className={`${display ? "active" : "hidden"}`}
-                  >
-                    click to hide descriptions
-                  </p>
+    <div className="all-of-todos-page">
+      <h1 className="title" id="my-todo-list">My To Do List</h1>
+      <CreateTodo/>
+      <div className="todos">
+      <p onClick={showDisplay} className={`${display ? "hidden" : "active"}`}>
+        click to show descriptions
+      </p>
+      <p onClick={hideDisplay} className={`${display ? "active" : "hidden"}`}>
+        click to hide descriptions
+      </p>
       <ul>
         {toDoList.map((todo) => {
           return (
@@ -47,7 +42,15 @@ export default function Todos() {
                   </h3>
                 </a>
                 <div className="description">
-                  {todo.due ? <strong><h6 className="due-date">Due {new Date(todo.due).toDateString()}</h6></strong> : <h6>No due date</h6>}
+                  {todo.due ? (
+                    <strong>
+                      <h6 className="due-date">
+                        Due {new Date(todo.due).toDateString()}
+                      </h6>
+                    </strong>
+                  ) : (
+                    <h6>No due date</h6>
+                  )}
                   <p className={`${display ? "" : "hidden"}`}>
                     {todo.description}
                   </p>
@@ -57,6 +60,8 @@ export default function Todos() {
           );
         })}
       </ul>
+      </div>
+      
     </div>
   );
 }
