@@ -19,13 +19,15 @@ function Todo() {
     nav('/todos')
   }
   return (
-    <div>
-      <h2>{todo.title}</h2>
-      <h6>Created on {new Date(todo.created).toString()}</h6>
-       {todo.due ? <h3>Due on {new Date(todo.due).toDateString()}</h3>: "No Due Date"}
+    <div className="todo-card">
+      <h2 className="this-todo-title">{todo.title}</h2>
+      <h6 className="created">Created on {new Date(todo.created).toString()}</h6>
+       <div className="todo-details">
+       {todo.due ? <h3 className="todo-due">Due on {new Date(todo.due).toDateString()}</h3>: <h3 className="todo-due">No Due Date</h3>}
       <h4>Description:</h4>
       <p>{todo.description}</p>
       <h4>Completed: {`${todo.complete ? 'Done!' : 'No'}`}</h4>
+       </div>
       <button onClick={() => {nav(`/edit-this-todo/${id}/edit`)}}>Edit</button>
       <button onClick={deleteTheTodo}>Delete</button>
       <button onClick={() => {nav('/todos')}}>Main</button>

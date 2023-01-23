@@ -79,11 +79,11 @@
     overflow-y: scroll;
     list-style: none;
     position: fixed;
-    padding-top: 3rem;
+    padding-top: 5rem;
     background: var(--brightPink);
     right: 0;
     bottom: 0;
-    height: 100vh;
+    height: 100%;
     width: 0;
     overflow: hidden;
     max-width: 250px;
@@ -212,7 +212,7 @@
   /* For the To Do Page */
   .all-of-todos-page{
     margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   #my-todo-list {
     color: var(--darkBlue);
@@ -250,16 +250,23 @@
     margin-bottom: 10px;
   }
   .todo-form textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
     height: 6rem;
     max-width: 100%;
   }
   .todo-form input{
+    margin-top: 5px;
+    margin-bottom: 5px;
     height: 1.5rem;
   }
   .todo-form input[name="submit"]{
     max-width: fit-content;
     padding: 2px;
     align-self: flex-end
+  }
+  #form{
+    margin-top: 4em;
   }
   .todos{
     max-width: 85vw;
@@ -295,6 +302,36 @@
     color: var(--lightBlue);
     font-size: 15px;
     padding-bottom: 3px;
+  }
+  .todo-card{
+    width: 70vw;
+    margin: auto;
+    margin-top: 40%;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    border: 5px outset gray;
+  }
+  .this-todo-title{
+    font-family: var(--header);
+    color: var(--darkBlue);
+    font-size: 20px;
+  }
+  .created{
+    margin: .5rem;
+    text-align: left;
+    color: gray;
+  }
+  .todo-details{
+    color: black;
+    margin-bottom: 1rem;
+  }
+  .todo-due{
+    text-align: left;
+    margin: .5rem;
+  }
+  .todo-details h4{
+    margin: .5rem;
   }
 }
 

@@ -42,7 +42,7 @@ export default function Todos() {
                   <h3 className={`todo-title ${todo.complete ? " completed" : ""}`}>
                     {todo.title}<input type='checkbox' defaultChecked={todo.complete}/>
                   </h3>
-                <div className="description">
+                <div>
 
                   <p className={` ${display ? "" : " hidden"}`}>
                     {todo.description}
