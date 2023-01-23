@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { deleteTodo, getTodos } from "../../services/todos-api";
+import { getTodos } from "../../services/todos-api";
 import CreateTodo from "./CreateTodo";
 import { HiMinus } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -58,7 +58,7 @@ export default function Todos() {
                     {todo.title}
                   </h3>
                 </a>
-                <div className="description">
+                <div className="todo-description">
                   {todo.due ? (
                     <strong>
                       <h6 className="due-date">

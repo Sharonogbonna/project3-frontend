@@ -44,20 +44,25 @@
     font-size: 2.2em;
   }
 
-  #my-grocery-list {
-    color: var(--brightPurple);
-  }
   #tbr-list {
     color: var(--orange);
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   #my-wishlist {
     color: var(--seafoam);
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   #my-application-tracker {
     color: var(--pink);
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   #my-book-log {
     color: var(--green);
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
   .navBar {
     position: relative;
@@ -105,7 +110,17 @@
   .menuNav li:first-child {
     margin-top: 7rem;
   }
-
+  .create-button{
+    position: relative;
+  }
+  .create-button button{
+    position: fixed;
+    right: 40px;
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
   .container {
     width: 90vw;
     margin: auto;
@@ -219,17 +234,7 @@
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .create-button{
-    position: relative;
-  }
-  .create-button button{
-    position: fixed;
-    right: 40px;
-    z-index: 10;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-  }
+  
   .todo-form{
     margin: auto;
     border: 5px inset gray;
@@ -290,7 +295,7 @@
     border-color: var(--darkBlue);
     padding: 3px;
   }
-  .description{
+  .todo-description{
     background-color: lightgray;
     color: black;
     width: 105px;
@@ -333,6 +338,51 @@
   .todo-details h4{
     margin: .5rem;
   }
+  /* For the Grocery List */
+  .all-groceries-page{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #my-grocery-list {
+    color: var(--brightPurple);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 30px
+  }
+  .groceries{
+    max-width: 85vw;
+    margin: auto;
+  }
+  .groceries ul{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    padding: 0;
+    width: 100vw;
+    gap: 3px;
+  }
+  .groceries-titles{
+    width: 105px;
+    color: var(--brightPurple);
+    border-color: var(--brightPurple);
+    padding: 3px;
+  }
+  .groceries-details{
+    background-color: lightgray;
+    width: 105px;
+    border: 2px inset var(--brightPurple);
+    border-top: none;
+    padding: 3px;
+    color: black;
+  }
+  .groceries-details h4{
+    color: gray;
+    font-size: 15px;
+  }
+  .groceries-details h4 span{
+    font-size: 13px;
+    color: black;
+    }
+
 }
 
 /* body{

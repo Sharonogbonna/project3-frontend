@@ -4,26 +4,24 @@ import { HiMinus } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const ToggleCreate = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
+  const [createButton, setCreateButton] = useState(false)
   const handleToggle = () => {
-    setNavbarOpen((prev) => !prev);
-  };
-  const closeMenu = () => {
-    setNavbarOpen(false);
-  };
+    setCreateButton((prev) => !prev)
+  }
+  
   return (
     <div>
-        <div className="navBar" id="navBar-create">
-        <button onClick={handleToggle}>
-        {navbarOpen ? (
-          <HiMinus style={{ color: "#fff", width: "25px", height: "25px" }} />
+         <div className="create-button">
+      <button onClick={handleToggle}>
+        {createButton ? (
+          <HiMinus style={{ color: "#1da5be", width: "25px", height: "25px" }} />
         ) : (
           <AiOutlinePlus
             style={{ color: "#1da5be", width: "25px", height: "25px" }}
           />
         )}
       </button>
-        </div>
+      </div>
     </div>
   )
 }

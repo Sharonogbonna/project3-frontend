@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom"
 import { createGrocery } from "../../services/groceries.api"
-
+import { useState } from "react"
 export default function CreateGrocery() {
     const nav = useNavigate()
-
+    const [createButton, setCreateButton] = useState(false)
+    const closeMenu = () => {
+      setCreateButton(false);
+    };
     const createTheGrocery = (e) => {
         const grocery = {item: e.target.item.value, brand: e.target.brand.value, isPurchased: false, store: e.target.store.value, unit: e.target.unit.value, quantity: e.target.quantity.value}
         createGrocery(grocery)
@@ -23,7 +26,7 @@ return(
         <br />
         <p>Quantity:</p> <input type="number" name="quantity"></input>
         <br />
-        <input type="submit" value="submit"></input>
+        <input type="submit" name="submit" onClick={closeMenu}></input>
       </form>
     </div>
 )
