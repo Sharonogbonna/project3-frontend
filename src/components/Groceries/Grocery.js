@@ -30,6 +30,7 @@ export default function Grocery() {
       {grocery.quantity ? <h3>Quantity: {grocery.quantity}</h3> : <h3></h3>}
       </div>
       <h4>Purchased: {`${grocery.isPurchased ? "Yes" : "No"}`}</h4>
+      <div className="buttons">
       <button
         onClick={() => {
           nav(`/edit-this-grocery/${id}/edit`);
@@ -46,5 +47,6 @@ export default function Grocery() {
         Main
       </button>
     </div>
+      </div>
   );
 }
