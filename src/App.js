@@ -2,7 +2,8 @@ import { Route, Routes } from "react-router-dom";
 //css
 import './default.css'
 import './style.css'
-
+//fonts
+import "./fonts/Discopia Regular.ttf"
 //#region //components
 import Dashboard from "./components/Dashboard"
 import Nav from "./components/NavBar";

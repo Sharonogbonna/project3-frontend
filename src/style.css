@@ -1,3 +1,9 @@
+@font-face{
+  font-family: 'Discopia';
+  src: local('Discopia Regular'),
+  url("./fonts/Discopia\ Regular.ttf") format("truetype") 
+}
+
 :root {
   --brightPink: #e4159e;
   --pink: #d1439e;
