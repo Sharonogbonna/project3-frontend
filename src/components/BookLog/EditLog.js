@@ -34,7 +34,7 @@ const EditLog = () => {
         <div>
           <form onSubmit={editTheLog} className="log-form">
             <h4 className="form-title" id="log-form-title">
-              Edit a Log
+              Edit This Review
             </h4>
             <div id="title-input">
               Title:{" "}
@@ -59,14 +59,14 @@ const EditLog = () => {
               <p>
                 (your start date was {new Date(data.startDate).toDateString()})
               </p>{" "}
-              <input type="date" name="startDate" /> <br />
+              <input type="date" name="startDate" defaultValue={data.startDate}/> <br />
             </div>
             <div id="enddate-inputs">
               End Date:{" "}
               <p>
                 (your end date was {new Date(data.endDate).toDateString()})
               </p>
-              <input type="date" name="endDate" />
+              <input type="date" name="endDate" defaultValue={data.endDate}/>
             </div>
             <div id="rating-input">
               Rating:{" "}

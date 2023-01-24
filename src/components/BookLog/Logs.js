@@ -54,7 +54,7 @@ const ListOfLogs = () => {
                     {log.title} <p className="logs-author">by {log.author}</p> 
                   </h3>
                 </Link>
-                <div className="log-details">
+                <div className="logs-details">
                 {log.startDate && log.endDate ? (
                   <h5 className="logs-dates">
                     Read {new Date(log.startDate).toDateString()} to{" "}

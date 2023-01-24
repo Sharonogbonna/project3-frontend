@@ -19,22 +19,27 @@ const Log = () => {
     nav("/booklog");
   };
   return (
-    <div>
-      <h3>
-        {log.title} by {log.author}
+    <div className="log-card">
+      <h3 className="log-title">
+        {log.title}
       </h3>
-      {log.startDate && log.endDate ? <h5>Read {new Date(log.startDate).toDateString()} to {new Date(log.endDate).toDateString()}</h5> : <h5></h5> }
-      <p>Summary: {log.summary}</p>
-      <h3>Rating: {log.rating}/5 stars</h3>
-      <p>My opinion: {log.opinion}</p>
-      {log.quotes ? <div className="quotes">
+      <p className="log-author">by {log.author}</p>
+      {log.startDate && log.endDate ? <h5 className="log-dates">Read {new Date(log.startDate).toDateString()} to {new Date(log.endDate).toDateString()}</h5> : <h5></h5> }
+      <div className="log-details">
+      <p
+      className="log-summary"><span>Summary:</span> {log.summary}</p>
+      <h3 className="log-rating">Rating: {log.rating}/5 stars</h3>
+      <p className="log-opinion"><span>My opinion:</span> {log.opinion}</p>
+      {log.quotes ? <div className="log-quotes">
+        <h4>Favorite Lines</h4>
         {log.quotes.map(quote =>{
             return(
                 <p>"{quote.trim()}"</p>
             )
         })}
       </div> : <div></div>}
-    
+      </div>
+      <div className="log-buttons">
       <button
         onClick={() => {
           nav(`/edit-this-book/${id}/edit`);
@@ -50,6 +55,7 @@ const Log = () => {
       >
         Main
       </button>
+      </div>
     </div>
   );
 };
