@@ -26,9 +26,9 @@ const EditWish = () => {
     }
 
   return (
-    <div>
+    <div id='form'>
       <form onSubmit={editTheWish} className="wish-form">
-        <h4>Edit Wish</h4>
+        <h4 className='form-title'>Edit Wish</h4>
         Item: <input type="text" name="name" defaultValue={data.name}/> <br />
         Store: <input type="text" name="store" placeholder="store" defaultValue={data.store} /> <br />
         Price: <input type='number' name="price" defaultValue={data.price}/> <br/>

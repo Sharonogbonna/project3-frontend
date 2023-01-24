@@ -34,11 +34,12 @@ const ListOfLogs = () => {
             />
           )}
         </button>
+        </div>
         <h1 className="title" id="my-book-log">
           {" "}
           My Book Log
         </h1>
-      </div>
+      
       <div className="logs">
       <div className={createButton ? "" : "hidden"}>
         <CreateLog />
