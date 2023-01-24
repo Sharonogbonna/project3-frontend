@@ -68,14 +68,15 @@ const AppDisplay = () => {
     }
   };
   return (
-    <div className="app-display">
-      <h2>
+    <div className="app-card">
+      
         {/* When user clicks on position it takes them to application */}
-        <a href={app.appLink} target="_blank">
+        <a href={app.appLink} target="_blank"><h2>
           {app.position}
-        </a>{" "}
-        at {app.company}
-      </h2>
+          </h2> </a>{" "}
+      
+      <p className="app-company">at {app.company}</p>
+      <p className="app-location">{app.location}</p>
       {/* If user enters application date it displays if not it says you haven't applied */}
       {!app.dateApplied ? (
         <h5>You haven't applied yet</h5>
@@ -85,8 +86,8 @@ const AppDisplay = () => {
           {new Date(app.dateApplied).toDateString()}
         </h5>
       )}
-      <h3>Location: {app.location}</h3>
-      <div>
+
+      <div className="app-details">
         {/* if the user is no longer interested it does not display other details */}
         {app.stillInterested ? (
           <div>
@@ -111,6 +112,7 @@ const AppDisplay = () => {
           <h3>You are no longer interested in this position</h3>
         )}
       </div>
+      <div>
       <button
         onClick={() => {
           nav(`/edit-this-app/${id}/edit`);
@@ -126,6 +128,7 @@ const AppDisplay = () => {
       >
         Main
       </button>
+      </div>
     </div>
   );
 };

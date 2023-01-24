@@ -44,14 +44,6 @@
     font-size: 32px;
   }
 
-  
- 
-  #my-application-tracker {
-    color: var(--pink);
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-  
   .navBar {
     position: relative;
   }
@@ -853,7 +845,88 @@
     height: 25px;
     margin: 5px 0 5px 0;
   }
-
+  /* For the application Tracker */
+  #my-application-tracker {
+    color: var(--pink);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .apps{
+    width: 75vw;
+    margin: auto;
+  }
+  .apps-titles{
+    color: var(--pink);
+    border-color: var(--pink);
+    padding: 3px;
+    font-size: 18px;
+  }
+  .apps h4{
+    color: black;
+    border: 2px inset var(--pink);
+    border-top: none;
+    margin-bottom: 1rem;
+    padding: 3px;
+    background-color: lightgray;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .app-form{
+    margin: auto;
+    border: 5px inset darkgray;
+    background-color: lightgray;
+    color: var(--pink);
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 4rem;
+    font-size: 15px;
+  }
+  .app-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 35%;
+    text-align: center;
+    background-color: lightgray;
+    padding: 10px;
+    border: 5px outset darkgray;
+    max-height: 500px;
+    overflow: scroll;
+    color: black;
+  }
+  .app-card h2{
+    font-family: var(--header);
+    color: var(--pink);
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+  .app-location{
+    margin-bottom: 10px;
+  }
+  .app-card h5{
+    color: gray;
+    margin-bottom: 10px;
+  }
+  .app-details > div{
+    margin-bottom: 5px;
+  }
+  .app-form h4{
+    border-bottom: 2px solid var(--pink);
+  }
+  .app-form input{
+    margin: 5px 0 5px 0;
+    height: 20px;
+  }
+  .app-form textarea{
+    margin: 5px 0 5px 0;
+    height: 4rem;
+    max-width: 100%;
+  }
+  
 }
 
 /* body{
