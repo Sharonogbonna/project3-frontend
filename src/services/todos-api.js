@@ -1,7 +1,15 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/todos'
+// const baseURL = 'http://localhost:3001/todos'
+let baseURL = ""
+
+if (process.env.NODE_ENV === 'production') {
+    baseURL = `https://byathread-api.onrender.com` + "/todos/"
+}
+else {
+    baseURL = 'http://localhost:3001' + "/todos/"
+}
 
 //show all
 export const getTodos = () => {

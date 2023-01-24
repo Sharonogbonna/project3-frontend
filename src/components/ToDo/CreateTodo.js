@@ -6,6 +6,7 @@ export default function CreateTodo() {
     const nav = useNavigate()
     const [createButton, setCreateButton] = useState(false)
     const createTheTodo = (e) => {
+        e.preventDefault()
         const todo = {title: e.target.title.value, description: e.target.description.value, 
         complete: false, due: e.target.due.value, created: Date.now()}
         createTodo(todo)

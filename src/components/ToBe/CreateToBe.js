@@ -11,7 +11,8 @@ const CreateToBe = () => {
     setCreateButton(false);
   };
 
-  const createTheToBe = (e) => {
+  const createTheToBe = (e) => { 
+    e.preventDefault()
     const tobe = {
       title: e.target.title.value,
       author: e.target.author.value,

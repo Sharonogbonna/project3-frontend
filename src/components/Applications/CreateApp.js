@@ -16,7 +16,7 @@ const CreateApp = () => {
         const app = {company: e.target.company.value, position: e.target.position.value,
         appLink: e.target.appLink.value, description: e.target.description.value, benefits: e.target.benefits.checked, dateApplied: e.target.dateApplied.value, response: e.target.response.checked, responseDate: e.target.responseDate.value, interview: e.target.interview.checked, interviewDate: e.target.interviewDate.value, offer: e.target.offer.value, stillInterested: true, location: e.target.location.value, compensation: e.target.compensation.value}
         createApp(app)
-        nav('/')
+        nav('/apptracker')
     }
 
 return(

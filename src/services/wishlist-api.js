@@ -1,7 +1,15 @@
 //all our end points
 import axios from 'axios'
 
-const baseURL = 'http://localhost:3001/wishlist'
+// const baseURL = 'http://localhost:3001/wishlist'
+let baseURL = ""
+
+if (process.env.NODE_ENV === 'production') {
+    baseURL = `https://byathread-api.onrender.com` + "/wishlist/"
+}
+else {
+    baseURL = 'http://localhost:3001' + "/wishlist/"
+}
 
 //show all
 export const getWishes = () => {

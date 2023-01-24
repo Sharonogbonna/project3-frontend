@@ -12,6 +12,7 @@ const CreateLog = () => {
   };
 
   const createTheLog = (e) => {
+    e.preventDefault()
     const log = {
       title: e.target.title.value,
       author: e.target.author.value,
