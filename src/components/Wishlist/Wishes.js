@@ -36,10 +36,11 @@ const Wishes = () => {
           )}
         </button>
         </div>
+        <h1 className='title' id='my-wishlist'>My Wishlist</h1>
       <div className={createButton ? "" : "hidden"}>
         <CreateWish/>
       </div>
-      <h1 className='title' id='my-wishlist'>My Wishlist</h1>
+      
       <div className='wishes'>
       <ul>
         {wishList.map((wish) => {

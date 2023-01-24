@@ -1,8 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { createToBe } from "../../services/toBe-api";
+import { useState } from "react";
 const CreateToBe = () => {
   const nav = useNavigate();
+  const [createButton, setCreateButton] = useState(false);
+
+  const closeMenu = () => {
+    setCreateButton(false);
+  };
 
   const createTheToBe = (e) => {
     const tobe = {
@@ -18,9 +24,9 @@ const CreateToBe = () => {
   };
 
   return (
-    <div>
+    <div id="form">
       <form onSubmit={createTheToBe} className="tobe-form">
-        <h4>Add to TBR/TBW</h4>
+        <h4 className="form-title" id="tobe-form-title">Add to TBR/TBW</h4>
         Category: <select name="category">
         <option value="" disabled selected hidden>Select a Category...</option>
         <option value="Book">Book</option>
@@ -31,7 +37,7 @@ const CreateToBe = () => {
         Author: <input type="text" name="author" placeholder="author" /> <br />
         Platform: <input type={'text'} name="platform" placeholder="e.g. HBOMax, Netflix, etc."/> <br/>
         Recommended by: <input type="text" name="recommender" placeholder="recommended by"/><br/>
-        <input type="submit" value={`create`} />
+        <input type="submit" value={`Create`} name="submit" onClick={closeMenu} />
       </form>
     </div>
   );

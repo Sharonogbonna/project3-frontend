@@ -24,9 +24,9 @@ const EditToBe = () => {
         nav(`/this-tbr/${id}`)
     }
     return (
-        <div>
-          <form onSubmit={editTheToBe} className="tbr-form">
-            <h4>Edit TBR/TBW</h4>
+        <div id='form'>
+          <form onSubmit={editTheToBe} className="tobe-form">
+          <h4 className="form-title" id="tobe-form-title">Edit TBR/TBW</h4>
             Category: <select name="category">
             <option defaultValue={data.category} selected>{`${data.category}`}</option>
             <option value="Book">Book</option>
@@ -38,7 +38,7 @@ const EditToBe = () => {
             Platform: <input type={'text'} name="platform" placeholder="e.g. HBOMax, Netflix, etc." defaultValue={data.platform}/> <br/>
             Recommended by: <input type="text" name="recommender" placeholder="recommended by" defaultValue={data.recommender}/><br/>
             {`${data.category}`==="Book" ? "Read?" : "Watched?"}<input type="checkbox" name='done' defaultChecked={data.done}/><br/>
-            <input type="submit" value={`create`} /> 
+            <input type="submit" value={`create`} name="submit"/> 
           </form>
         </div>
       );

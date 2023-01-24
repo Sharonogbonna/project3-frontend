@@ -22,10 +22,11 @@ const ToBe = () => {
 
   return (
     <div className="tbr-card">
+       <h5>{tobe.recommender} recommended this</h5>
       <h1>{tobe.title}</h1>{`${tobe.category}` === 'Book' ? <h3>{tobe.category} by {tobe.author}</h3> : <h3>{tobe.category} on {tobe.platform}</h3>}
-      <h5>{tobe.recommender} recommended this</h5>
       <h4>{`${tobe.category}`==="Book" ? "Read?" : "Watched?"} {`${tobe.done ? "Yes" : "No"}`}</h4>
-      <button className={`${tobe.category}`=== "Book" ? '' : 'hidden'} onClick={() => {nav('/booklog')}}>Log This Book</button>
+      <div>
+      <button className={`${tobe.category}`=== "Book" ? '' : 'hidden'} onClick={() => {nav('/create-log')}}>Log This Book</button>
       <button
         onClick={() => {
           nav(`/edit-this-tbr/${id}/edit`);
@@ -41,6 +42,7 @@ const ToBe = () => {
       >
         Main
       </button>
+      </div>
     </div>
   );
 }
