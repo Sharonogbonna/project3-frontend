@@ -21,7 +21,7 @@ const ListOfLogs = () => {
       .then((res) => setLogList(res.data));
   }, []);
   return (
-    <div>
+    <div className="all-logs-page">
       <div className="create-button">
         <button onClick={handleToggle}>
           {createButton ? (
@@ -39,6 +39,7 @@ const ListOfLogs = () => {
           My Book Log
         </h1>
       </div>
+      <div className="logs">
       <div className={createButton ? "" : "hidden"}>
         <CreateLog />
       </div>
@@ -50,11 +51,12 @@ const ListOfLogs = () => {
               <li>
                 <Link to={`/this-book/${log._id}`}>
                   <h3 className="logs-titles">
-                    {log.title} <span>by {log.author}</span> 
+                    {log.title} <p className="logs-author">by {log.author}</p> 
                   </h3>
                 </Link>
+                <div className="log-details">
                 {log.startDate && log.endDate ? (
-                  <h5>
+                  <h5 className="logs-dates">
                     Read {new Date(log.startDate).toDateString()} to{" "}
                     {new Date(log.endDate).toDateString()}
                   </h5>
@@ -62,8 +64,8 @@ const ListOfLogs = () => {
                   <h5></h5>
                 )}
 
-                <h3>Rating: {log.rating}/5 stars</h3>
-                <p className="logs-summary">{log.summary}</p>
+                <h3 className="logs-ratings">Rating: {log.rating}/5 stars</h3>
+                <p className="logs-summary"><span>Summary: </span>{log.summary}</p>
                 <p className="logs-quotes">
                   "
                   {log.quotes[
@@ -71,11 +73,13 @@ const ListOfLogs = () => {
                   ].trim()}
                   "
                 </p>
+                </div>
               </li>
             </div>
           );
         })}
       </ul>
+      </div>
       </div>
       
     </div>
