@@ -16,8 +16,9 @@ const ToBe = () => {
   });
 
   const deleteTheToBe = () => {
-    deleteToBe(id);
-    nav("/tbr-w");
+    deleteToBe(id).then(() => {
+      nav("/tbr-w")
+    })
   };
 
   return (
