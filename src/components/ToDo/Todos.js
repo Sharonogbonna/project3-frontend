@@ -26,7 +26,7 @@ export default function Todos() {
     setCreateButton((prev) => !prev)
   }
   return (
-    <div className="all-of-todos-page">
+    <div id="page">
       <div className="create-button">
       <button onClick={handleToggle}>
         {createButton ? (

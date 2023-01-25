@@ -21,7 +21,7 @@ const ListOfLogs = () => {
       .then((res) => setLogList(res.data));
   }, []);
   return (
-    <div className="all-logs-page">
+    <div id="page">
       <div className="create-button">
         <button onClick={handleToggle}>
           {createButton ? (

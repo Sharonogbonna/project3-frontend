@@ -21,7 +21,7 @@ export default function Groceries() {
   }, []);
  
   return (
-    <div className="all-groceries-page">
+    <div id="page">
        <div className="create-button">
       <button onClick={handleToggle}>
         {createButton ? (

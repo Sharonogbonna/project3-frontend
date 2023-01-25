@@ -69,7 +69,6 @@ const AppDisplay = () => {
   };
   return (
     <div className="app-card">
-      
         {/* When user clicks on position it takes them to application */}
         <a href={app.appLink} target="_blank"><h2>
           {app.position}
