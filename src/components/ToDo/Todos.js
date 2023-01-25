@@ -3,6 +3,7 @@ import { getTodos } from "../../services/todos-api";
 import CreateTodo from "./CreateTodo";
 import { HiMinus } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export default function Todos() {
   //state to hold data
@@ -53,11 +54,11 @@ export default function Todos() {
           return (
             <div>
               <li>
-                <a href={`/this-todo/${todo._id}`}>
+              <Link to={`/this-todo/${todo._id}`}>
                   <h3 className={`todos-titles ${todo.complete ? " completed" : ""}`}>
                     {todo.title}
                   </h3>
-                </a>
+                </Link>
                 <div className="todo-description">
                   {todo.due ? (
                     <strong>

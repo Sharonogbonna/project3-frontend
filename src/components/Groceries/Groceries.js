@@ -3,6 +3,7 @@ import { getGroceries } from "../../services/groceries.api";
 import CreateGrocery from "./CreateGrocery";
 import { HiMinus } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 
 export default function Groceries() {
@@ -43,11 +44,11 @@ export default function Groceries() {
             <div>
               <li>
               <div>
-                <a href={`/this-grocery/${grocery._id}`}>
+              <Link to={`/this-grocery/${grocery._id}`}>
                   <h3 className={`groceries-titles ${grocery.isPurchased ? " completed" : ""}`}>
                     {grocery.item}
                   </h3>
-                </a>
+                </Link>
                 <div className="groceries-details">
                 {grocery.brand ? <h4>Brand: <span>{grocery.brand}</span></h4> : <h4></h4>} 
                 {grocery.store ? <h4>From: <span>{grocery.store}</span></h4> : <h4></h4>}
