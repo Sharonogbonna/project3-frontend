@@ -299,7 +299,7 @@ a h3 {
   width: 40vw;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 25px;
   margin-bottom: 10px;
   font-size: 20px;
 }
@@ -408,89 +408,93 @@ a h3 {
 /* For the Grocery List */
 #my-grocery-list {
   color: var(--brightPurple);
-  margin-left: 20px;  
 }
 .groceries{
-  width: 85vw;
+  width: 70vw;
   margin: auto;
+  margin-top: 2rem;
 }
 .groceries ul{
   display: grid;
   grid-template-columns: repeat(3, 30%);
   padding: 0;
   width: 100%;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
 }
 .groceries-titles{
-  width: 105px;
+  width: 100%;
   color: var(--brightPurple);
   border-color: var(--brightPurple);
   padding: 3px;
 }
 .groceries-details{
   background-color: lightgray;
-  width: 105px;
+  width: 100%;
   border: 2px inset var(--brightPurple);
   border-top: none;
-  padding: 3px;
+  padding: 10px;
   color: black;
 }
 .groceries-details h4{
   color: gray;
-  font-size: 15px;
+  font-size: 23px;
 }
 .groceries-details h4 span{
-  font-size: 13px;
+  font-size: 20px;
   color: black;
   }
 .grocery-form{
   margin: auto;
-  border: 5px inset gray;
+  border: 5px inset darkgray;
   background-color: lightgray;
   color: var(--brightPurple);
-  width: 13rem;
+  max-width: 45vw;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 25px;
   margin-bottom: 10px;
   font-size: 20px;
 }
 #grocery-form-title{
   border-bottom: 2px solid var(--brightPurple);
+  font-size: 48px;
 }
 .grocery-form input{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  height: 20px;
+  height: 30px;
 }
 .grocery-card{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
+  width: 30rem;
+  height: 25rem;
   margin: auto;
-  margin-top: 40%;
+  margin-top: 15%;
   text-align: center;
   background-color: lightgray;
-  padding: 10px;
+  padding: 25px;
   border: 5px outset darkgray;
-  height: 15rem;
 }
 .grocery-card h2{
   font-family: var(--header);
   color: var(--brightPurple);
-  font-size: 25px;
+  font-size: 30px;
 }
 .grocery-card h3, .grocery-card h4{
-  margin: .5rem;
+  margin: 1rem;
   color: black;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 .grocery-card h4{
   text-align: center;
   color: gray;
+  margin: 20px;
+  padding-left: unset;
+}
+.grocery-card button{
+  font-size: 20px;
 }
 /* For Book Log Pages */
 #my-book-log {
@@ -1262,7 +1266,6 @@ a:hover, a *:hover{
   }
   /* For the Grocery List */
   #my-grocery-list {
-    color: var(--brightPurple);
     margin-left: 20px;
     margin-bottom: 20px;
     font-size: 30px
@@ -1279,34 +1282,19 @@ a:hover, a *:hover{
     gap: 10px;
     justify-content: center;
   }
-  .groceries-titles{
-    width: 105px;
-    color: var(--brightPurple);
-    border-color: var(--brightPurple);
-    padding: 3px;
-  }
   .groceries-details{
-    background-color: lightgray;
-    width: 105px;
-    border: 2px inset var(--brightPurple);
     border-top: none;
     padding: 3px;
-    color: black;
   }
   .groceries-details h4{
-    color: gray;
     font-size: 15px;
   }
   .groceries-details h4 span{
     font-size: 13px;
-    color: black;
     }
   .grocery-form{
     margin: auto;
-    border: 5px inset gray;
-    background-color: lightgray;
-    color: var(--brightPurple);
-    width: 13rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1314,7 +1302,7 @@ a:hover, a *:hover{
     font-size: 20px;
   }
   #grocery-form-title{
-    border-bottom: 2px solid var(--brightPurple);
+    font-size: unset;
   }
   .grocery-form input{
     margin-top: 5px;
@@ -1329,9 +1317,7 @@ a:hover, a *:hover{
     margin: auto;
     margin-top: 40%;
     text-align: center;
-    background-color: lightgray;
     padding: 10px;
-    border: 5px outset darkgray;
     height: 15rem;
   }
   .grocery-card h2{
@@ -1348,6 +1334,9 @@ a:hover, a *:hover{
   .grocery-card h4{
     text-align: center;
     color: gray;
+  }
+  .grocery-card button{
+    font-size: unset;
   }
 /* For Book Log Pages */
   #my-book-log {

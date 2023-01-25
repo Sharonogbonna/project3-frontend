@@ -18,7 +18,7 @@ export default function CreateGrocery() {
 return(
     <div id="form">
         <form onSubmit={createTheGrocery} className="grocery-form">
-        <h3 className="form-title" id="grocery-form-title">Add an Item to Your List</h3>
+        <h3 className="form-title" id="grocery-form-title">Add a Grocery</h3>
         <p>Item:</p> <input type="text" name="item"></input> <br />
         <p>Brand:</p> <input type="text" name="brand"></input>
         <br />

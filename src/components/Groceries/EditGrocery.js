@@ -19,9 +19,9 @@ export default function EditGrocery(){
         nav(`/this-grocery/${id}`)
     }
   return (
-    <div>
+    <div id='form'>
         <form onSubmit={editTheGrocery} className="grocery-form">
-        <h3>Edit Item</h3>
+        <h3 id='grocery-form-title' className='form-title'>Edit Item</h3>
         <p>Item:</p> <input type="text" name="item" defaultValue={data.item}/> <br />
         <p>Brand:</p> <input type="text" name="brand" defaultValue={data.brand}/>
         <br />
@@ -32,7 +32,7 @@ export default function EditGrocery(){
         <p>Quantity:</p> <input type="number" name="quantity" defaultValue={data.quantity}/>
         <br />
         <p>Purchased?</p><input type='checkbox' name='isPurchased' defaultChecked={data.isPurchased}/>
-        <input type="submit" value="submit"></input>
+        <input type="submit" value="submit" name='submit'></input>
       </form>
     </div>
   )
