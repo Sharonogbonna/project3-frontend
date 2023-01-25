@@ -1,7 +1,17 @@
 @font-face{
   font-family: 'Discopia';
-  src: local('Discopia Regular'),
-  url("./fonts/Discopia\ Regular.ttf") format("truetype") 
+  src: local('Discopia-Regular'),
+  url("./fonts/Discopia-Regular.ttf") format("truetype") 
+}
+@font-face{
+  font-family: 'Joystix';
+  src: local('joystix-monospace'),
+  url("./fonts/joystix-monospace.ttf") format("truetype") 
+}
+@font-face{
+  font-family: 'TypeTwo';
+  src: local('typetwo_beta1.1'),
+  url("./fonts/typetwo_beta1.1.ttf") format("truetype") 
 }
 
 :root {
