@@ -21,8 +21,10 @@ const CreateToBe = () => {
       recommender: e.target.recommender.value,
       done: false
     };
-    createToBe(tobe);
-    nav("/tbr-w");
+    createToBe(tobe).then(() => {
+      nav("/tbr-w")
+    })
+    ;
   };
 
   return (

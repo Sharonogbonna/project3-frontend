@@ -23,7 +23,7 @@ const ListOfNav = () => {
                 <div>Wishlist</div>
             </Link>
             <Link to="/tbr-w">
-                <div>To Be Read/Watched</div>
+                <div>To Be Read and Watched</div>
             </Link>
         </div>
   )

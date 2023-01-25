@@ -15,9 +15,9 @@ import CreateNavBar from "./CreateNavBar";
 
 function Dashboard() {
   return (
-    <div>
+    <div className="dashboard">
       <CreateNavBar/>
-      <h1 className="title" >By a Thread</h1>
+      <h1 className="title">By a Thread</h1>
       <div className="container">
         <div className="dash-nav">
           <ListOfNav/>

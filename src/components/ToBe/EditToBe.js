@@ -20,8 +20,10 @@ const EditToBe = () => {
             category: e.target.category.value,
             recommender: e.target.recommender.value,
             done: e.target.done.checked}
-        editToBe(id, updatedToBe)
-        nav(`/this-tbr/${id}`)
+        editToBe(id, updatedToBe).then(() => {
+          nav(`/this-tbr/${id}`)
+        })
+        
     }
     return (
         <div id='form'>
