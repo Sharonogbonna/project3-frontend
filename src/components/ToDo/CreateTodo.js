@@ -19,7 +19,7 @@ export default function CreateTodo() {
 return(
     <div id="form">
         <form onSubmit={createTheTodo} className="todo-form">
-        <h4 id="form-title">Create a To Do</h4>
+        <h4 className="form-title" id="todo-form-title">Create a To Do</h4>
             Title: <input type='text' name="title" placeholder="title"/> <br/>
             Due Date: <input type="date" name="due"/><br/>
             Details: <textarea type='text' name='description' placeholder="description" id='dsc'/><br/>

@@ -49,6 +49,7 @@ export default function Todos() {
       <p onClick={hideDisplay} className={`description-btn ${display ? " active" : " hidden"}`}>
         click to hide descriptions
       </p>
+      <div className="todos-webpage">
       <ul>
         {toDoList.map((todo) => {
           return (
@@ -78,6 +79,8 @@ export default function Todos() {
           );
         })}
       </ul>
+      </div>
+      
       </div>
       
     </div>

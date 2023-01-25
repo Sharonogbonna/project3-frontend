@@ -26,7 +26,7 @@ export default function Form({ props }){
     return(
         //fix this to have ternary operator for submit button
         <form className="todo-form" id="form" onSubmit={handleSubmit}>
-            <h3 id="form-title">Edit This To Do</h3>
+            <h3 className="form-title" id="todo-form-title">Edit This To Do</h3>
             Title: <input type='text' name="title" placeholder="title" defaultValue={props.title}/> <br/>
             Due Date:{props.due ? <p>(current due date is {new Date(props.due).toDateString()})</p> : <p></p>} <input type="date" name="due" /> <br/>
             Details: <textarea type="text" name="description" placeholder="description" defaultValue={props.description}/>
