@@ -1,17 +1,17 @@
-@font-face{
-  font-family: 'Discopia';
-  src: local('Discopia-Regular'),
-  url("./fonts/Discopia-Regular.ttf") format("truetype") 
+@font-face {
+  font-family: "Discopia";
+  src: local("Discopia-Regular"),
+    url("./fonts/Discopia-Regular.ttf") format("truetype");
 }
-@font-face{
-  font-family: 'Joystix';
-  src: local('joystix-monospace'),
-  url("./fonts/joystix-monospace.ttf") format("truetype") 
+@font-face {
+  font-family: "Joystix";
+  src: local("joystix-monospace"),
+    url("./fonts/joystix-monospace.ttf") format("truetype");
 }
-@font-face{
-  font-family: 'TypeTwo';
-  src: local('typetwo_beta1.1'),
-  url("./fonts/typetwo_beta1.1.ttf") format("truetype") 
+@font-face {
+  font-family: "TypeTwo";
+  src: local("typetwo_beta1.1"),
+    url("./fonts/typetwo_beta1.1.ttf") format("truetype");
 }
 
 :root {
@@ -30,8 +30,8 @@
   --title: "Discopia";
 }
 * {
-  /* font-family: "TypeTwo", 'Electrolize', sans-serif; */
-  font-family: 'Electrolize', sans-serif;
+  font-family: "TypeTwo", "Electrolize", sans-serif;
+  /* font-family: 'Electrolize', sans-serif; */
   box-sizing: border-box;
 }
 .completed {
@@ -103,10 +103,10 @@ body {
 .menuNav li:first-child {
   margin-top: 7rem;
 }
-.create-button{
+.create-button {
   position: relative;
 }
-.create-button button{
+.create-button button {
   position: fixed;
   right: 40px;
   z-index: 10;
@@ -114,23 +114,23 @@ body {
   background: transparent;
   border: none;
 }
-#page{
+#page {
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-#form{
+#form {
   margin-top: 4em;
 }
-#submit{
+#submit {
   display: flex;
   justify-content: flex-end;
 }
-input[name="submit"]{
+input[name="submit"] {
   max-width: fit-content;
   padding: 2px;
-  align-self: flex-end
+  align-self: flex-end;
 }
- form input[type="date"]{
+form input[type="date"] {
   text-transform: uppercase;
 }
 .container {
@@ -139,13 +139,13 @@ input[name="submit"]{
   margin: auto;
   margin-top: 1rem;
   display: grid;
-  grid-template-columns:repeat(20, 4.25%);
+  grid-template-columns: repeat(20, 4.25%);
   grid-template-rows: repeat(19, 4.25%);
   gap: 10px;
   margin-bottom: 5rem;
   align-items: center;
 }
-.dash-nav{
+.dash-nav {
   background-color: #ffffff;
   grid-row: 1/20;
   grid-column: 1/5;
@@ -158,10 +158,11 @@ input[name="submit"]{
   justify-content: center;
   text-align: center;
 }
-.dash-nav *{
+.dash-nav * {
   margin: 2rem 0 2rem 0;
 }
-.dash-nav a, .dash-nav div{
+.dash-nav a,
+.dash-nav div {
   color: var(--lightBlue);
   font-size: 1.25rem;
   font-family: var(--header);
@@ -174,7 +175,7 @@ a h3 {
   font-size: 20px;
   font-weight: lighter;
   border: 2px inset darkgray;
-  -webkit-text-stroke: .5px black;
+  -webkit-text-stroke: 0.5px black;
 }
 .todo-container {
   background-color: #ffffff;
@@ -291,7 +292,7 @@ a h3 {
   color: var(--darkBlue);
   margin: 0 0 20px 20px;
 }
-.todo-form{
+.todo-form {
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
@@ -303,17 +304,17 @@ a h3 {
   margin-bottom: 10px;
   font-size: 20px;
 }
-.form-title{
+.form-title {
   font-family: var(--header);
   font-size: 20px;
   text-align: center;
   border-bottom: 2px solid var(--darkBlue);
   margin-bottom: 10px;
 }
-#todo-form-title{
+#todo-form-title {
   font-size: 48px;
 }
-.todo-form textarea{
+.todo-form textarea {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 8rem;
@@ -321,7 +322,7 @@ a h3 {
   font-size: 20px;
   text-transform: capitalize;
 }
-.todo-form input{
+.todo-form input {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 3rem;
@@ -329,35 +330,35 @@ a h3 {
   text-transform: capitalize;
 }
 
-.todos{
+.todos {
   max-width: 75vw;
   margin: auto;
 }
-.description-btn{
- margin-bottom: 1em;
- margin-right: 2rem;
- text-align: right;
- font-size: 15px;
+.description-btn {
+  margin-bottom: 1em;
+  margin-right: 2rem;
+  text-align: right;
+  font-size: 15px;
 }
-.todos-webpage{
+.todos-webpage {
   margin: 2rem 0 0 7rem;
   width: 80%;
   max-width: 100%;
 }
-.todos ul{
+.todos ul {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   max-width: 100%;
   gap: 10px;
   justify-content: center;
 }
-.todos-titles{
+.todos-titles {
   width: 100%;
   color: var(--darkBlue);
   border-color: var(--darkBlue);
   padding: 3px;
 }
-.todo-description{
+.todo-description {
   background-color: lightgray;
   color: black;
   width: 100%;
@@ -365,12 +366,12 @@ a h3 {
   border-top: none;
   padding: 3px;
 }
-.due-date{
+.due-date {
   color: var(--lightBlue);
   font-size: 20px;
   padding-bottom: 3px;
 }
-.todo-card{
+.todo-card {
   max-width: 40rem;
   margin: auto;
   margin-top: 15%;
@@ -379,42 +380,42 @@ a h3 {
   padding: 20px;
   border: 5px outset darkgray;
 }
-.this-todo-title{
+.this-todo-title {
   font-family: var(--header);
   color: var(--darkBlue);
   font-size: 30px;
 }
-.created{
-  margin: .5rem;
+.created {
+  margin: 0.5rem;
   text-align: left;
   color: gray;
 }
-.todo-details{
+.todo-details {
   color: black;
   margin-bottom: 1rem;
   font-size: 25px;
 }
-.todo-due{
+.todo-due {
   text-align: left;
-  margin: .5rem;
+  margin: 0.5rem;
   font-size: 20px;
 }
-.todo-details h4{
-  margin: .5rem;
+.todo-details h4 {
+  margin: 0.5rem;
 }
-.todo-card button{
+.todo-card button {
   font-size: 20px;
 }
 /* For the Grocery List */
 #my-grocery-list {
   color: var(--brightPurple);
 }
-.groceries{
+.groceries {
   width: 70vw;
   margin: auto;
   margin-top: 2rem;
 }
-.groceries ul{
+.groceries ul {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   padding: 0;
@@ -422,13 +423,13 @@ a h3 {
   gap: 15px;
   justify-content: center;
 }
-.groceries-titles{
+.groceries-titles {
   width: 100%;
   color: var(--brightPurple);
   border-color: var(--brightPurple);
   padding: 3px;
 }
-.groceries-details{
+.groceries-details {
   background-color: lightgray;
   width: 100%;
   border: 2px inset var(--brightPurple);
@@ -436,15 +437,15 @@ a h3 {
   padding: 10px;
   color: black;
 }
-.groceries-details h4{
+.groceries-details h4 {
   color: gray;
   font-size: 23px;
 }
-.groceries-details h4 span{
+.groceries-details h4 span {
   font-size: 20px;
   color: black;
-  }
-.grocery-form{
+}
+.grocery-form {
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
@@ -456,14 +457,14 @@ a h3 {
   margin-bottom: 10px;
   font-size: 20px;
 }
-#grocery-form-title{
+#grocery-form-title {
   border-bottom: 2px solid var(--brightPurple);
   font-size: 48px;
 }
-.grocery-form input{
+.grocery-form input {
   height: 30px;
 }
-.grocery-card{
+.grocery-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -476,47 +477,48 @@ a h3 {
   padding: 25px;
   border: 5px outset darkgray;
 }
-.grocery-card h2{
+.grocery-card h2 {
   font-family: var(--header);
   color: var(--brightPurple);
-  font-size: 30px;
+  font-size: 40px;
 }
-.grocery-card h3, .grocery-card h4{
+.grocery-card h3,
+.grocery-card h4 {
   margin: 1rem;
   color: black;
   text-align: left;
   padding-left: 40px;
 }
-.grocery-card h4{
+.grocery-card h4 {
   text-align: center;
   color: gray;
   margin: 20px;
   padding-left: unset;
 }
-.grocery-card button{
+.grocery-card button {
   font-size: 20px;
 }
 /* For Book Log Pages */
 #my-book-log {
   color: var(--green);
 }
-.logs{
+.logs {
   width: 90vw;
   margin: auto;
   margin-top: 3em;
 }
-.logs-titles{
+.logs-titles {
   width: 70%;
   color: var(--green);
-  border-color:var(--green);
+  border-color: var(--green);
   margin: auto;
   padding: 3px;
   font-size: 32px;
 }
-.logs-author{
+.logs-author {
   margin: 5px 0 5px 0;
 }
-.logs-details{
+.logs-details {
   width: 70%;
   margin: auto;
   padding: 20px;
@@ -530,14 +532,14 @@ a h3 {
   grid-template-rows: repeat(3, auto);
   gap: 15px;
 }
-.logs-dates{
+.logs-dates {
   color: var(--lightBlue);
   margin: 6px 0 6px 0;
   grid-column: 1/6;
   grid-row: 1;
   font-size: 15px;
 }
-.logs-ratings{
+.logs-ratings {
   text-align: right;
   font-size: 20px;
   margin: 10px 0 10px 0;
@@ -546,24 +548,23 @@ a h3 {
   font-size: 22px;
   text-align: center;
 }
-.logs-summary{
+.logs-summary {
   grid-row: 2;
   grid-column: 3/7;
   font-size: 20px;
 }
-.logs-summary span{
+.logs-summary span {
   color: gray;
 }
-.logs-quotes{
+.logs-quotes {
   grid-row: 2/4;
   grid-column: 1/3;
   align-self: center;
   font-style: italic;
   line-height: 35px;
   text-align: center;
-
 }
-.log-card{
+.log-card {
   width: 50vw;
   margin: auto;
   margin-top: 10%;
@@ -573,29 +574,29 @@ a h3 {
   border: 5px outset darkgray;
   color: black;
   display: grid;
-  grid-template-columns: repeat(7,11%);
+  grid-template-columns: repeat(7, 11%);
   grid-template-rows: repeat(5, auto);
   gap: 15px;
   justify-content: center;
 }
-.log-title{
+.log-title {
   font-family: var(--header);
   color: var(--green);
   grid-row: 1;
   grid-column: 1/8;
   font-size: 25px;
 }
-.log-author{
+.log-author {
   grid-row: 2;
   grid-column: 1/8;
   font-size: 20px;
 }
-.log-dates{
+.log-dates {
   grid-row: 3;
   grid-column: 1/8;
   color: gray;
 }
-.log-details{
+.log-details {
   grid-row: 4;
   grid-column: 1/8;
   display: grid;
@@ -607,52 +608,53 @@ a h3 {
   margin: auto;
   width: 95%;
 }
-.log-rating{
+.log-rating {
   grid-row: 1;
   grid-column: 5/8;
   font-size: 18px;
 }
-.log-summary{
+.log-summary {
   grid-column: 1/5;
   grid-row: 2;
   text-align: left;
   font-size: 18px;
   align-self: center;
 }
-.log-opinion{
+.log-opinion {
   grid-column: 1/5;
   grid-row: 3;
   text-align: left;
   font-size: 18px;
   align-self: center;
 }
-.log-summary span, .log-opinion span{
+.log-summary span,
+.log-opinion span {
   color: var(--green);
   font-weight: bold;
   text-decoration: underline;
 }
-.log-quotes{
+.log-quotes {
   grid-row: 2/4;
   grid-column: 5/8;
   align-self: center;
   font-style: italic;
   font-size: 20px;
 }
-.log-quotes p{
+.log-quotes p {
   font-size: 16px;
   margin: 12px 0 12px 0;
   line-height: 21px;
 }
-.log-quotes h4{
+.log-quotes h4 {
   color: var(--green);
   font-weight: bold;
   text-decoration: underline;
 }
-.log-buttons{
+.log-buttons {
   grid-row: 5;
   grid-column: 1/8;
 }
-.log-form{
+.log-form {
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
@@ -667,89 +669,90 @@ a h3 {
   gap: 5px;
   align-content: center;
   justify-content: center;
-  
 }
-.log-form div{
+.log-form div {
   margin: 5px;
 }
-#log-form-title{
+#log-form-title {
   border-bottom: 2px solid var(--green);
   grid-row: 1;
   grid-column: 1/7;
   font-size: 45px;
 }
-#startdate-inputs{
+#startdate-inputs {
   grid-row: 2;
   grid-column: 1/3;
   font-size: 18px;
 }
-#startdate-inputs input{
+#startdate-inputs input {
   height: 22px;
   width: 9rem;
 }
-#enddate-inputs{
+#enddate-inputs {
   grid-row: 2;
   grid-column: 5/7;
   font-size: 18px;
 }
-#enddate-inputs input{
+#enddate-inputs input {
   height: 22px;
   width: 9rem;
 }
-#title-input{
+#title-input {
   grid-row: 3;
   grid-column: 1/4;
   font-size: 23px;
 }
-#author-input{
+#author-input {
   grid-row: 3;
   grid-column: 4/7;
   font-size: 23px;
 }
-#rating-input{
+#rating-input {
   grid-row: 4;
   grid-column: 1/7;
   text-align: center;
   font-size: 23px;
 }
- #author-input input, #title-input input{
+#author-input input,
+#title-input input {
   text-transform: capitalize;
   height: 2rem;
   width: 100%;
 }
-#rating-input input{
+#rating-input input {
   width: 45%;
 }
-#summary-input{
+#summary-input {
   grid-row: 5;
   grid-column: 1/4;
   font-size: 20px;
 }
-#summary-input textarea,#opinion-input textarea{
+#summary-input textarea,
+#opinion-input textarea {
   height: 10rem;
   width: 16rem;
   max-width: 100%;
   text-transform: capitalize;
 }
-#opinion-input{
+#opinion-input {
   grid-row: 6;
   grid-column: 1/4;
   font-size: 20px;
 }
-#quote-input{
+#quote-input {
   grid-row: 5/7;
   grid-column: 4/7;
   font-size: 20px;
 }
-#quote-input p{
+#quote-input p {
   font-size: 15px;
 }
-#quote-input textarea{
+#quote-input textarea {
   height: 23.1rem;
   width: 16rem;
   max-width: 16rem;
 }
-.log-form #submit{
+.log-form #submit {
   grid-row: 7;
   grid-column: 6;
 }
@@ -758,24 +761,24 @@ a h3 {
   color: var(--seafoam);
   margin-bottom: 2rem;
 }
-.wishes{
+.wishes {
   width: 75vw;
   margin: auto;
 }
-.wishes ul{
+.wishes ul {
   display: grid;
   grid-template-columns: repeat(3, 30%);
   width: 100%;
   gap: 20px;
   justify-content: center;
 }
-.wishes-titles{
+.wishes-titles {
   color: var(--seafoam);
   border-color: var(--seafoam);
   padding: 3px;
   width: 100%;
 }
-.wishes-links{
+.wishes-links {
   text-align: center;
   text-decoration: underline;
   color: black;
@@ -785,7 +788,7 @@ a h3 {
   padding: 3px;
   background-color: lightgray;
 }
-.wish-card{
+.wish-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -799,31 +802,31 @@ a h3 {
   height: 20rem;
   color: black;
 }
-.wish-title{
+.wish-title {
   font-family: var(--header);
   font-size: 32px;
   color: var(--seafoam);
   margin-bottom: 15px;
 }
-.wish-link{
+.wish-link {
   color: gray;
   text-decoration: underline;
   margin-bottom: 20px;
 }
-.wish-price{
+.wish-price {
   font-size: 31px;
   margin-bottom: 15px;
 }
-.wish-reason{
+.wish-reason {
   margin-bottom: 20px;
   font-size: 20px;
 }
-.wish-card h4{
+.wish-card h4 {
   color: gray;
   margin-bottom: 20px;
   font-size: 22px;
 }
-.wish-form{
+.wish-form {
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
@@ -835,15 +838,15 @@ a h3 {
   margin-bottom: 20px;
   font-size: 22px;
 }
-.wish-form h4{
+.wish-form h4 {
   border-bottom: 2px solid var(--seafoam);
   font-size: 40px;
 }
-.wish-form input{
+.wish-form input {
   margin-bottom: 5px;
   height: 32px;
 }
-.wish-form textarea{
+.wish-form textarea {
   height: 7rem;
   max-width: 100%;
 }
@@ -852,23 +855,23 @@ a h3 {
   color: var(--orange);
   margin-bottom: 20px;
 }
-.tobes{
+.tobes {
   width: 75vw;
   margin: auto;
 }
-.tobes ul{
+.tobes ul {
   display: grid;
   grid-template-columns: repeat(2, 43%);
   gap: 20px;
   justify-content: center;
 }
-.tobes-titles{
+.tobes-titles {
   color: var(--orange);
   border-color: var(--orange);
   padding: 3px;
   width: 100%;
 }
-.tobes-details{
+.tobes-details {
   text-align: center;
   color: gray;
   background-color: lightgray;
@@ -878,12 +881,12 @@ a h3 {
   border-top: none;
   font-size: 19px;
 }
-.tobes-details span{
+.tobes-details span {
   color: black;
   display: block;
   font-size: 22px;
 }
-.tbr-card{
+.tbr-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -897,28 +900,28 @@ a h3 {
   height: 20rem;
   color: black;
 }
-.tbr-card h1{
+.tbr-card h1 {
   font-family: var(--header);
   font-size: 32px;
   color: var(--orange);
   margin-bottom: 15px;
 }
-.tbr-card h3{
+.tbr-card h3 {
   margin-bottom: 20px;
   font-size: 25px;
 }
-.tbr-card h5{
+.tbr-card h5 {
   color: gray;
   margin-bottom: 20px;
   text-align: left;
   text-transform: capitalize;
-  font-size: 17px;  
+  font-size: 17px;
 }
-.tbr-card h4{
+.tbr-card h4 {
   margin-bottom: 20px;
   font-size: 20px;
 }
-.tobe-form{
+.tobe-form {
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
@@ -930,12 +933,13 @@ a h3 {
   margin-bottom: 20px;
   font-size: 22px;
 }
-.tobe-form h4{
+.tobe-form h4 {
   border-bottom: 2px solid var(--orange);
   font-size: 42px;
   margin-bottom: 20px;
 }
-.tobe-form input, .tobe-form select{
+.tobe-form input,
+.tobe-form select {
   height: 50px;
   font-size: 18px;
   text-transform: capitalize;
@@ -945,17 +949,17 @@ a h3 {
   color: var(--pink);
   margin-bottom: 20px;
 }
-.apps{
+.apps {
   width: 60vw;
   margin: auto;
 }
-.apps-titles{
+.apps-titles {
   color: var(--pink);
   border-color: var(--pink);
   padding: 5px;
   font-size: 25px;
 }
-.apps h4{
+.apps h4 {
   color: black;
   border: 2px inset var(--pink);
   border-top: none;
@@ -967,7 +971,7 @@ a h3 {
   width: 35%;
   text-align: center;
 }
-.app-form{
+.app-form {
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
@@ -979,10 +983,10 @@ a h3 {
   margin-bottom: 4rem;
   font-size: 22px;
 }
-.app-form h4{
+.app-form h4 {
   font-size: 40px;
 }
-.app-card{
+.app-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -996,37 +1000,38 @@ a h3 {
   color: black;
   font-size: 22px;
 }
-.app-card h2{
+.app-card h2 {
   font-family: var(--header);
   color: var(--pink);
   text-decoration: underline;
   margin-bottom: 15px;
 }
-.app-location{
+.app-location {
   margin-bottom: 20px;
 }
-.app-card h5{
+.app-card h5 {
   color: gray;
   margin-bottom: 20px;
 }
-.app-details div > *{
+.app-details div > * {
   margin-bottom: 20px;
 }
-.app-details{
+.app-details {
   margin-bottom: 20px;
 }
-.app-form h4{
+.app-form h4 {
   border-bottom: 2px solid var(--pink);
 }
-.app-form input{
+.app-form input {
   height: 40px;
   font-size: 18px;
 }
-.app-form textarea{
+.app-form textarea {
   height: 6rem;
   max-width: 100%;
 }
-a:hover, a *:hover{
+a:hover,
+a *:hover {
   color: var(--yellow);
 }
 
@@ -1087,10 +1092,10 @@ a:hover, a *:hover{
   .menuNav li:first-child {
     margin-top: 7rem;
   }
-  .create-button{
+  .create-button {
     position: relative;
   }
-  .create-button button{
+  .create-button button {
     position: fixed;
     right: 40px;
     z-index: 10;
@@ -1098,21 +1103,21 @@ a:hover, a *:hover{
     background: transparent;
     border: none;
   }
-  #page{
+  #page {
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
-  #form{
+  #form {
     margin-top: 4em;
   }
-  #submit{
+  #submit {
     display: flex;
     justify-content: flex-end;
   }
-  input[name="submit"]{
+  input[name="submit"] {
     max-width: fit-content;
     padding: 2px;
-    align-self: flex-end
+    align-self: flex-end;
   }
   .container {
     width: 90vw;
@@ -1125,7 +1130,8 @@ a:hover, a *:hover{
     margin-bottom: 5rem;
     align-items: unset;
   }
-  .dash-nav div, .dash-nav{
+  .dash-nav div,
+  .dash-nav {
     display: none;
   }
   a h3 {
@@ -1207,7 +1213,7 @@ a:hover, a *:hover{
   #my-todo-list {
     margin: 0 0 20px 20px;
   }
-  .todo-form{
+  .todo-form {
     margin: auto;
     width: 13rem;
     display: flex;
@@ -1216,174 +1222,153 @@ a:hover, a *:hover{
     margin-bottom: 10px;
     font-size: 15px;
   }
-  .form-title{
+  .form-title {
     font-family: var(--header);
     font-size: 20px;
     text-align: center;
     border-bottom: 2px solid var(--darkBlue);
     margin-bottom: 10px;
   }
-  #todo-form-title{
+  #todo-form-title {
     font-size: 25px;
   }
-  .todo-form textarea{
+  .todo-form textarea {
     margin-top: 5px;
     margin-bottom: 5px;
     height: 6rem;
     max-width: 100%;
     font-size: unset;
   }
-  .todo-form input{
+  .todo-form input {
     margin-top: 5px;
     margin-bottom: 5px;
     height: 1.5rem;
     font-size: unset;
   }
-  .todos{
+  .todos {
     max-width: 85vw;
     margin: auto;
   }
-  .todos-webpage{
+  .todos-webpage {
     margin: auto;
   }
-  .description-btn{
-   margin-bottom: 1em;
-   text-align: right;
-   font-size: 15px;
+  .description-btn {
+    margin-bottom: 1em;
+    text-align: right;
+    font-size: 15px;
   }
-  .todos ul{
+  .todos ul {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     width: 100%;
     gap: 10px;
     justify-content: center;
   }
-  .due-date{
+  .due-date {
     font-size: 15px;
     padding-bottom: 3px;
   }
-  .todo-card{
+  .todo-card {
     width: 70vw;
     margin: auto;
     margin-top: 40%;
     text-align: center;
   }
-  .this-todo-title{
-    font-family: var(--header);
+  .this-todo-title {
     font-size: 20px;
   }
-  .created{
-    margin: .5rem;
+  .created {
+    margin: 0.5rem;
     text-align: left;
   }
-  .todo-details{
+  .todo-details {
     margin-bottom: 1rem;
     font-size: unset;
   }
-  .todo-due{
+  .todo-due {
     text-align: left;
-    margin: .5rem;
+    margin: 0.5rem;
     font-size: unset;
   }
-  .todo-details h4{
-    margin: .5rem;
+  .todo-details h4 {
+    margin: 0.5rem;
   }
-  .todo-card button{
+  .todo-card button {
     font-size: unset;
   }
   /* For the Grocery List */
   #my-grocery-list {
     margin-left: 20px;
     margin-bottom: 20px;
-    font-size: 30px
+    font-size: 30px;
   }
-  .groceries{
+  .groceries {
     width: 85vw;
     margin: auto;
   }
-  .groceries ul{
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    padding: 0;
-    width: 100%;
+  .groceries ul {
     gap: 10px;
-    justify-content: center;
   }
-  .groceries-details{
-    border-top: none;
+  .groceries-details {
     padding: 3px;
   }
-  .groceries-details h4{
+  .groceries-details h4 {
     font-size: 15px;
   }
-  .groceries-details h4 span{
+  .groceries-details h4 span {
     font-size: 13px;
-    }
-  .grocery-form{
-    margin: auto;
+  }
+  .grocery-form {
     width: 15rem;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 20px;
   }
-  #grocery-form-title{
+  #grocery-form-title {
     font-size: unset;
   }
-  .grocery-form input{
+  .grocery-form input {
     margin-top: 5px;
     margin-bottom: 5px;
     height: 20px;
   }
-  .grocery-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .grocery-card {
     width: 70vw;
-    margin: auto;
     margin-top: 40%;
-    text-align: center;
     padding: 10px;
     height: 15rem;
   }
-  .grocery-card h2{
-    font-family: var(--header);
-    color: var(--brightPurple);
+  .grocery-card h2 {
     font-size: 25px;
   }
-  .grocery-card h3, .grocery-card h4{
-    margin: .5rem;
-    color: black;
-    text-align: left;
+  .grocery-card h3,
+  .grocery-card h4 {
+    margin: 0.5rem;
     padding-left: 10px;
   }
-  .grocery-card h4{
+  .grocery-card h4 {
     text-align: center;
-    color: gray;
   }
-  .grocery-card button{
+  .grocery-card button {
     font-size: unset;
   }
-/* For Book Log Pages */
+  /* For Book Log Pages */
   #my-book-log {
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .logs{
+  .logs {
     width: 85vw;
-    margin: auto;
   }
-  .logs-titles{
+  .logs-titles {
     width: 350px;
-    margin: auto;
     padding: 3px;
     font-size: unset;
   }
-  .logs-author{
+  .logs-author {
     margin: 2px 0 2px 0;
   }
-  .logs-details{
+  .logs-details {
     width: 350px;
     padding: 10px;
     margin-bottom: 10px;
@@ -1391,168 +1376,142 @@ a:hover, a *:hover{
     max-height: 300px;
     overflow: scroll;
   }
-  .logs-dates{
+  .logs-dates {
     margin: 3px 0 3px 0;
     font-size: 10px;
   }
-  .logs-ratings{
+  .logs-ratings {
     font-size: 18px;
     margin: 5px 0 5px 0;
     grid-column: 4/7;
-  grid-row: 2;
-  text-align: right;
+    grid-row: 2;
+    text-align: right;
   }
-  .logs-summary{
+  .logs-summary {
     font-size: 15px;
     grid-row: 3;
-  grid-column: 3/7;
+    grid-column: 3/7;
   }
-  .logs-quotes{
+  .logs-quotes {
     line-height: 20px;
   }
-  .log-card{
+  .log-card {
     width: 80vw;
-    margin: auto;
     margin-top: 30%;
-    text-align: center;
     padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(7,11%);
-    grid-template-rows: repeat(5, auto);
     gap: 10px;
   }
-  .log-title{
-    grid-row: 1;
-    grid-column: 1/8;
+  .log-title {
     font-size: 18px;
   }
-  .log-author{
-    grid-row: 2;
-    grid-column: 1/8;
+  .log-author {
     font-size: unset;
   }
-  
-  .log-details{
-    grid-row: 4;
-    grid-column: 1/8;
-    display: grid;
-    grid-template-columns: repeat(7, 12%);
-    grid-template-rows: repeat(3, auto);
-    align-content: center;
-    justify-content: center;
-    gap: 10px;
-    margin: auto;
+  .log-details {
     width: 90%;
   }
-  .log-rating{
+  .log-rating {
     font-size: 15px;
   }
-  .log-summary{
+  .log-summary {
     font-size: 13px;
   }
-  .log-opinion{
+  .log-opinion {
     font-size: 14px;
   }
-  .log-quotes{
+  .log-quotes {
     font-size: unset;
   }
-  .log-quotes p{
+  .log-quotes p {
     font-size: 12.5px;
     margin: 7px 0 7px 0;
     line-height: 16px;
   }
-  .log-form{
-    margin: auto;
+  .log-form {
     width: 23rem;
     padding: 15px;
     margin-bottom: 10px;
     font-size: 20px;
-    display: grid;
-    grid-template-columns: repeat(6, 15%);
-    grid-template-rows: repeat(7, auto);
-    gap: 5px;
-    align-content: center;
-    justify-content: center;
-    
   }
-  .log-form div{
+  .log-form div {
     margin: 5px;
   }
-  #log-form-title{
+  #log-form-title {
     font-size: unset;
   }
-  #startdate-inputs{
+  #startdate-inputs {
     font-size: 10px;
   }
-  #startdate-inputs input{
+  #startdate-inputs input {
     height: 15px;
     width: 5.5rem;
   }
-  #enddate-inputs{
+  #enddate-inputs {
     font-size: 10px;
   }
-  #enddate-inputs input{
+  #enddate-inputs input {
     height: 15px;
     width: 5.5rem;
   }
-  #title-input{
+  #title-input {
     font-size: 18px;
   }
-  #author-input{
+  #author-input {
     font-size: 18px;
   }
-  #rating-input{
+  #rating-input {
     grid-row: 4;
     grid-column: 1/7;
     text-align: center;
     font-size: unset;
   }
-  #summary-input{
+  #summary-input {
     font-size: 15px;
   }
-  #author-input input, #title-input input{
+  #author-input input,
+  #title-input input {
     height: unset;
-    width: unset
-  }
-  #rating-input input{
     width: unset;
   }
-  #summary-input textarea,#opinion-input textarea{
+  #rating-input input {
+    width: unset;
+  }
+  #summary-input textarea,
+  #opinion-input textarea {
     height: 5rem;
     width: 8rem;
   }
-  #opinion-input{
+  #opinion-input {
     font-size: 15px;
   }
-  #quote-input{
+  #quote-input {
     font-size: 15px;
   }
-  #quote-input p{
+  #quote-input p {
     font-size: 10px;
   }
-  #quote-input textarea{
+  #quote-input textarea {
     height: 12.1rem;
     max-width: 8rem;
   }
   /* For Wish List Pages*/
   #my-wishlist {
-    color: var(--seafoam);
     margin-left: 20px;
     margin-bottom: 20px;
   }
-  .wishes{
+  .wishes {
     width: 85vw;
   }
-  .wishes ul{
+  .wishes ul {
     gap: 10px;
   }
-  .wishes-titles{
+  .wishes-titles {
     padding: 3px;
   }
-  .wishes-links{
+  .wishes-links {
     width: 100%;
   }
-  .wish-card{
+  .wish-card {
     width: 70vw;
     margin: auto;
     margin-top: 40%;
@@ -1560,26 +1519,26 @@ a:hover, a *:hover{
     padding: 10px;
     height: 15rem;
   }
-  .wish-title{
+  .wish-title {
     font-size: 25px;
     margin-bottom: 5px;
   }
-  .wish-link{
+  .wish-link {
     margin-bottom: 10px;
   }
-  .wish-price{
+  .wish-price {
     font-size: 24px;
     margin-bottom: 5px;
   }
-  .wish-reason{
+  .wish-reason {
     margin-bottom: 10px;
     font-size: 13px;
   }
-  .wish-card h4{
+  .wish-card h4 {
     margin-bottom: 10px;
     font-size: 15px;
   }
-  .wish-form{
+  .wish-form {
     margin: auto;
     border: 5px inset darkgray;
     background-color: lightgray;
@@ -1591,14 +1550,14 @@ a:hover, a *:hover{
     margin-bottom: 10px;
     font-size: 15px;
   }
-  .wish-form h4{
+  .wish-form h4 {
     font-size: 22px;
   }
-  .wish-form input{
+  .wish-form input {
     margin: 5px 0 5px 0;
     height: 20px;
   }
-  .wish-form textarea{
+  .wish-form textarea {
     margin: 5px 0 5px 0;
     height: 4rem;
     max-width: 100%;
@@ -1607,51 +1566,52 @@ a:hover, a *:hover{
   #tbr-list {
     margin-left: 20px;
   }
-  .tobes{
+  .tobes {
     width: 85vw;
   }
-  .tobes ul{
+  .tobes ul {
     gap: 10px;
   }
-  .tobes-titles{
+  .tobes-titles {
     padding: 3px;
   }
-  .tobes-details{
+  .tobes-details {
     font-size: unset;
   }
-  .tobes-details span{
+  .tobes-details span {
     font-size: 15px;
   }
-  .tbr-card{
+  .tbr-card {
     width: 70vw;
     margin-top: 40%;
     padding: 15px;
     height: 18rem;
   }
-  .tbr-card h1{
+  .tbr-card h1 {
     font-size: 25px;
     margin-bottom: 5px;
   }
-  .tbr-card h3{
+  .tbr-card h3 {
     margin-bottom: 10px;
     font-size: unset;
   }
-  .tbr-card h5{
-   font-size: 12px;  
+  .tbr-card h5 {
+    font-size: 12px;
   }
-  .tbr-card h4{
+  .tbr-card h4 {
     margin-bottom: 10px;
     font-size: unset;
   }
-  .tobe-form{
+  .tobe-form {
     width: 22rem;
     padding: 10px;
     font-size: 15px;
   }
-  .tobe-form h4{
+  .tobe-form h4 {
     font-size: 30px;
   }
-  .tobe-form input, .tobe-form select{
+  .tobe-form input,
+  .tobe-form select {
     height: 25px;
     margin: 5px 0 5px 0;
     font-size: unset;
@@ -1660,28 +1620,28 @@ a:hover, a *:hover{
   #my-application-tracker {
     margin-left: 20px;
   }
-  .apps{
+  .apps {
     width: 75vw;
   }
-  .apps-titles{
+  .apps-titles {
     padding: 3px;
     font-size: 18px;
   }
-  .apps h4{
+  .apps h4 {
     width: 100%;
     text-align: left;
     font-size: 18px;
   }
-  .app-form{
+  .app-form {
     width: 75vw;
     padding: 10px;
     margin-bottom: 4rem;
     font-size: 15px;
   }
-  .app-form h4{
+  .app-form h4 {
     font-size: 20px;
   }
-  .app-card{
+  .app-card {
     width: 70vw;
     margin: auto;
     margin-top: 35%;
@@ -1689,30 +1649,29 @@ a:hover, a *:hover{
     max-height: 500px;
     font-size: unset;
   }
-  .app-card h2{
+  .app-card h2 {
     margin-bottom: 5px;
   }
-  .app-location{
+  .app-location {
     margin-bottom: 10px;
   }
-  .app-card h5{
+  .app-card h5 {
     margin-bottom: 10px;
   }
-  .app-details div > *{
+  .app-details div > * {
     margin-bottom: 10px;
   }
-  .app-details{
+  .app-details {
     margin-bottom: 10px;
   }
-  .app-form input{
+  .app-form input {
     margin: 5px 0 5px 0;
     height: 20px;
     font-size: unset;
   }
-  .app-form textarea{
+  .app-form textarea {
     margin: 5px 0 5px 0;
     height: 4rem;
     max-width: 100%;
   }
-  
 }
