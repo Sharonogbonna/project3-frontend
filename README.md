@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# By A Thread
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## By Sharon Ogbonna
+A Full Stack (MERN) Application with CRUD functionality. This project was inspired by [https://www.notion.so/](Notion) an organizational app. I named By A Thread because sometimes you feel like that all that is holding your life together and thats okay. Hopefully this app can help with that. This repo works best with [https://github.com/Sharonogbonna/project3-backend](this repo backend).
 
-## Available Scripts
+## Live Links
 
-In the project directory, you can run:
-
-### `npm start`
+[byathread-ui.onrender.com](By A Thread UI)
+[byathread-api.onrender.com](By A Thread Backend)
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
