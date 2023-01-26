@@ -29,8 +29,8 @@ const EditApp = () => {
       location: e.target.location.value,
       compensation: e.target.compensation.value,
     };
-    editApp(id, updatedApp);
-    nav(`/this-app/${id}`);
+    editApp(id, updatedApp)
+    .then(() => nav(`/this-app/${id}`))
   };
   return (
     <div id="form">

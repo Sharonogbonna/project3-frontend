@@ -15,8 +15,7 @@ const Log = () => {
   });
 
   const deleteTheLog = () => {
-    deleteLog(id);
-    nav("/booklog");
+    deleteLog(id).then(() => nav("/booklog"));
   };
   return (
     <div className="log-card">

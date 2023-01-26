@@ -25,8 +25,7 @@ const EditLog = () => {
       opinion: e.target.opinion.value,
       quotes: e.target.quotes.value.split("#"),
     };
-    editLog(id, updatedLog);
-    nav(`/this-book/${id}`);
+    editLog(id, updatedLog).then(() => nav(`/this-book/${id}`));
   };
   return (
     <div id="form">

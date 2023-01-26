@@ -13,8 +13,8 @@ const AppDisplay = () => {
   });
 
   const deleteTheApp = () => {
-    deleteApp(id);
-    nav("/apptracker");
+    deleteApp(id).then(() => nav("/apptracker"))
+    ;
   };
 
   const renderDescription = () => {

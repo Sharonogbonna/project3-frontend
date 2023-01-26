@@ -23,8 +23,7 @@ const CreateLog = () => {
       opinion: e.target.opinion.value,
       quotes: e.target.quotes.value.split("#"),
     };
-    createLog(log);
-    nav("/booklog");
+    createLog(log).then(() => nav("/booklog"));
   };
 
   return (
