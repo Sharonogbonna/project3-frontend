@@ -1,12 +1,12 @@
 # By A Thread
 
 ## By Sharon Ogbonna
-A Full Stack (MERN) Application with CRUD functionality. This project was inspired by [https://www.notion.so/](Notion) an organizational app. I named By A Thread because sometimes you feel like that all that is holding your life together and thats okay. Hopefully this app can help with that. This repo works best with [https://github.com/Sharonogbonna/project3-backend](this repo backend).
+A Full Stack (MERN) Application with CRUD functionality. This project was inspired by [Notion](https://www.notion.so/) an organizational app. I named By A Thread because sometimes you feel like that all that is holding your life together and thats okay. Hopefully this app can help with that. This repo works best with [this repo backend](https://github.com/Sharonogbonna/project3-backend).
 
 ## Live Links
 
-[byathread-ui.onrender.com](By A Thread UI)
-[byathread-api.onrender.com](By A Thread Backend)
+[By A Thread UI](byathread-ui.onrender.com)
+[By A Thread Backend](byathread-api.onrender.com)
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
