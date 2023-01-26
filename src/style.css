@@ -756,31 +756,30 @@ a h3 {
 /* For Wish List Pages*/
 #my-wishlist {
   color: var(--seafoam);
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .wishes{
-  width: 85vw;
+  width: 75vw;
   margin: auto;
 }
 .wishes ul{
   display: grid;
   grid-template-columns: repeat(3, 30%);
   width: 100%;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 }
 .wishes-titles{
   color: var(--seafoam);
   border-color: var(--seafoam);
   padding: 3px;
-  width: 105px;
+  width: 100%;
 }
 .wishes-links{
   text-align: center;
   text-decoration: underline;
   color: black;
-  width: 105px;
+  width: 35%;
   border: 2px inset var(--seafoam);
   border-top: none;
   padding: 3px;
@@ -790,166 +789,171 @@ a h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
+  width: 50vw;
   margin: auto;
-  margin-top: 40%;
+  margin-top: 20%;
   text-align: center;
   background-color: lightgray;
   padding: 10px;
   border: 5px outset darkgray;
-  height: 15rem;
+  height: 20rem;
   color: black;
 }
 .wish-title{
   font-family: var(--header);
-  font-size: 25px;
+  font-size: 32px;
   color: var(--seafoam);
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .wish-link{
   color: gray;
   text-decoration: underline;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .wish-price{
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 31px;
+  margin-bottom: 15px;
 }
 .wish-reason{
-  margin-bottom: 10px;
-  font-size: 13px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 .wish-card h4{
   color: gray;
-  margin-bottom: 10px;
-  font-size: 15px;
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 .wish-form{
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
   color: var(--seafoam);
-  width: 13rem;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 .wish-form h4{
   border-bottom: 2px solid var(--seafoam);
+  font-size: 40px;
 }
 .wish-form input{
-  margin: 5px 0 5px 0;
-  height: 20px;
+  margin-bottom: 5px;
+  height: 32px;
 }
 .wish-form textarea{
-  margin: 5px 0 5px 0;
-  height: 4rem;
+  height: 7rem;
   max-width: 100%;
 }
 /* For my TBR and TBW Page */
 #tbr-list {
   color: var(--orange);
-  margin-left: 20px;
   margin-bottom: 20px;
 }
 .tobes{
-  width: 85vw;
+  width: 75vw;
   margin: auto;
 }
 .tobes ul{
   display: grid;
   grid-template-columns: repeat(2, 43%);
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 }
 .tobes-titles{
   color: var(--orange);
   border-color: var(--orange);
   padding: 3px;
-  width: 140px;
+  width: 100%;
 }
 .tobes-details{
   text-align: center;
   color: gray;
   background-color: lightgray;
-  width: 140px;
+  width: 100%;
   padding: 3px;
   border: 2px inset var(--orange);
   border-top: none;
+  font-size: 19px;
 }
 .tobes-details span{
   color: black;
   display: block;
-  font-size: 15px;
+  font-size: 22px;
 }
 .tbr-card{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
+  width: 50vw;
   margin: auto;
-  margin-top: 40%;
+  margin-top: 20%;
   text-align: center;
   background-color: lightgray;
   padding: 10px;
   border: 5px outset darkgray;
-  height: 15rem;
+  height: 20rem;
   color: black;
 }
 .tbr-card h1{
   font-family: var(--header);
-  font-size: 25px;
+  font-size: 32px;
   color: var(--orange);
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .tbr-card h3{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 .tbr-card h5{
   color: gray;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left;
-  text-transform: capitalize;  
+  text-transform: capitalize;
+  font-size: 17px;  
 }
 .tbr-card h4{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 .tobe-form{
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
   color: var(--orange);
-  width: 13rem;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 .tobe-form h4{
   border-bottom: 2px solid var(--orange);
+  font-size: 42px;
+  margin-bottom: 20px;
 }
 .tobe-form input, .tobe-form select{
-  height: 25px;
-  margin: 5px 0 5px 0;
+  height: 50px;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 /* For the application Tracker */
 #my-application-tracker {
   color: var(--pink);
-  margin-left: 20px;
   margin-bottom: 20px;
 }
 .apps{
-  width: 75vw;
+  width: 60vw;
   margin: auto;
 }
 .apps-titles{
   color: var(--pink);
   border-color: var(--pink);
-  padding: 3px;
-  font-size: 18px;
+  padding: 5px;
+  font-size: 25px;
 }
 .apps h4{
   color: black;
@@ -958,64 +962,68 @@ a h3 {
   margin-bottom: 1rem;
   padding: 3px;
   background-color: lightgray;
-  font-size: 18px;
+  font-size: 25px;
   text-transform: capitalize;
+  width: 35%;
+  text-align: center;
 }
 .app-form{
   margin: auto;
   border: 5px inset darkgray;
   background-color: lightgray;
   color: var(--pink);
-  width: 75vw;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin-bottom: 4rem;
-  font-size: 15px;
+  font-size: 22px;
+}
+.app-form h4{
+  font-size: 40px;
 }
 .app-card{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 70vw;
+  width: 50vw;
   margin: auto;
-  margin-top: 35%;
+  margin-top: 15%;
   text-align: center;
   background-color: lightgray;
   padding: 10px;
   border: 5px outset darkgray;
-  max-height: 500px;
   color: black;
+  font-size: 22px;
 }
 .app-card h2{
   font-family: var(--header);
   color: var(--pink);
   text-decoration: underline;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .app-location{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .app-card h5{
   color: gray;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .app-details div > *{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .app-details{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .app-form h4{
   border-bottom: 2px solid var(--pink);
 }
 .app-form input{
-  margin: 5px 0 5px 0;
-  height: 20px;
+  height: 40px;
+  font-size: 18px;
 }
 .app-form textarea{
-  margin: 5px 0 5px 0;
-  height: 4rem;
+  height: 6rem;
   max-width: 100%;
 }
 a:hover, a *:hover{
@@ -1534,54 +1542,29 @@ a:hover, a *:hover{
   }
   .wishes{
     width: 85vw;
-    margin: auto;
   }
   .wishes ul{
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    width: 100%;
     gap: 10px;
-    justify-content: center;
   }
   .wishes-titles{
-    color: var(--seafoam);
-    border-color: var(--seafoam);
     padding: 3px;
-    width: 105px;
   }
   .wishes-links{
-    text-align: center;
-    text-decoration: underline;
-    color: black;
-    width: 105px;
-    border: 2px inset var(--seafoam);
-    border-top: none;
-    padding: 3px;
-    background-color: lightgray;
+    width: 100%;
   }
   .wish-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 70vw;
     margin: auto;
     margin-top: 40%;
     text-align: center;
-    background-color: lightgray;
     padding: 10px;
-    border: 5px outset darkgray;
     height: 15rem;
-    color: black;
   }
   .wish-title{
-    font-family: var(--header);
     font-size: 25px;
-    color: var(--seafoam);
     margin-bottom: 5px;
   }
   .wish-link{
-    color: gray;
-    text-decoration: underline;
     margin-bottom: 10px;
   }
   .wish-price{
@@ -1593,7 +1576,6 @@ a:hover, a *:hover{
     font-size: 13px;
   }
   .wish-card h4{
-    color: gray;
     margin-bottom: 10px;
     font-size: 15px;
   }
@@ -1602,7 +1584,7 @@ a:hover, a *:hover{
     border: 5px inset darkgray;
     background-color: lightgray;
     color: var(--seafoam);
-    width: 13rem;
+    width: 22rem;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1610,7 +1592,7 @@ a:hover, a *:hover{
     font-size: 15px;
   }
   .wish-form h4{
-    border-bottom: 2px solid var(--seafoam);
+    font-size: 22px;
   }
   .wish-form input{
     margin: 5px 0 5px 0;
@@ -1623,154 +1605,97 @@ a:hover, a *:hover{
   }
   /* For my TBR and TBW Page */
   #tbr-list {
-    color: var(--orange);
     margin-left: 20px;
-    margin-bottom: 20px;
   }
   .tobes{
     width: 85vw;
-    margin: auto;
   }
   .tobes ul{
-    display: grid;
-    grid-template-columns: repeat(2, 43%);
     gap: 10px;
-    justify-content: center;
   }
   .tobes-titles{
-    color: var(--orange);
-    border-color: var(--orange);
     padding: 3px;
-    width: 140px;
   }
   .tobes-details{
-    text-align: center;
-    color: gray;
-    background-color: lightgray;
-    width: 140px;
-    padding: 3px;
-    border: 2px inset var(--orange);
-    border-top: none;
+    font-size: unset;
   }
   .tobes-details span{
-    color: black;
-    display: block;
     font-size: 15px;
   }
   .tbr-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 70vw;
-    margin: auto;
     margin-top: 40%;
-    text-align: center;
-    background-color: lightgray;
-    padding: 10px;
-    border: 5px outset darkgray;
-    height: 15rem;
-    color: black;
+    padding: 15px;
+    height: 18rem;
   }
   .tbr-card h1{
-    font-family: var(--header);
     font-size: 25px;
-    color: var(--orange);
     margin-bottom: 5px;
   }
   .tbr-card h3{
     margin-bottom: 10px;
+    font-size: unset;
   }
   .tbr-card h5{
-    color: gray;
-    margin-bottom: 10px;
-    text-align: left;
-    text-transform: capitalize;  
+   font-size: 12px;  
   }
   .tbr-card h4{
     margin-bottom: 10px;
+    font-size: unset;
   }
   .tobe-form{
-    margin: auto;
-    border: 5px inset darkgray;
-    background-color: lightgray;
-    color: var(--orange);
-    width: 13rem;
-    display: flex;
-    flex-direction: column;
+    width: 22rem;
     padding: 10px;
-    margin-bottom: 10px;
     font-size: 15px;
   }
   .tobe-form h4{
-    border-bottom: 2px solid var(--orange);
+    font-size: 30px;
   }
   .tobe-form input, .tobe-form select{
     height: 25px;
     margin: 5px 0 5px 0;
+    font-size: unset;
   }
   /* For the application Tracker */
   #my-application-tracker {
-    color: var(--pink);
     margin-left: 20px;
-    margin-bottom: 20px;
   }
   .apps{
     width: 75vw;
-    margin: auto;
   }
   .apps-titles{
-    color: var(--pink);
-    border-color: var(--pink);
     padding: 3px;
     font-size: 18px;
   }
   .apps h4{
-    color: black;
-    border: 2px inset var(--pink);
-    border-top: none;
-    margin-bottom: 1rem;
-    padding: 3px;
-    background-color: lightgray;
+    width: 100%;
+    text-align: left;
     font-size: 18px;
-    text-transform: capitalize;
   }
   .app-form{
-    margin: auto;
-    border: 5px inset darkgray;
-    background-color: lightgray;
-    color: var(--pink);
     width: 75vw;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
     margin-bottom: 4rem;
     font-size: 15px;
   }
+  .app-form h4{
+    font-size: 20px;
+  }
   .app-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 70vw;
     margin: auto;
     margin-top: 35%;
-    text-align: center;
-    background-color: lightgray;
     padding: 10px;
-    border: 5px outset darkgray;
     max-height: 500px;
-    color: black;
+    font-size: unset;
   }
   .app-card h2{
-    font-family: var(--header);
-    color: var(--pink);
-    text-decoration: underline;
     margin-bottom: 5px;
   }
   .app-location{
     margin-bottom: 10px;
   }
   .app-card h5{
-    color: gray;
     margin-bottom: 10px;
   }
   .app-details div > *{
@@ -1779,20 +1704,15 @@ a:hover, a *:hover{
   .app-details{
     margin-bottom: 10px;
   }
-  .app-form h4{
-    border-bottom: 2px solid var(--pink);
-  }
   .app-form input{
     margin: 5px 0 5px 0;
     height: 20px;
+    font-size: unset;
   }
   .app-form textarea{
     margin: 5px 0 5px 0;
     height: 4rem;
     max-width: 100%;
-  }
-  a:hover, a *:hover{
-    color: var(--yellow);
   }
   
 }

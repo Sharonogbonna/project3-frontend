@@ -40,7 +40,7 @@ const EditToBe = () => {
             Platform: <input type={'text'} name="platform" placeholder="e.g. HBOMax, Netflix, etc." defaultValue={data.platform}/> <br/>
             Recommended by: <input type="text" name="recommender" placeholder="recommended by" defaultValue={data.recommender}/><br/>
             {`${data.category}`==="Book" ? "Read?" : "Watched?"}<input type="checkbox" name='done' defaultChecked={data.done}/><br/>
-            <input type="submit" value={`create`} name="submit"/> 
+            <input type="submit" value={`Edit`} name="submit"/> 
           </form>
         </div>
       );

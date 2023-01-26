@@ -35,7 +35,7 @@ const EditWish = () => {
         Reason: <textarea name="reason" placeholder="Be honest with yourself" defaultValue={data.reason}/><br/>
         Link: <input type="text" name="link" defaultValue={data.link}/>
         Received: <input type='checkbox' name="received" defaultChecked={data.received}/>
-        <input type="submit" value={`Edit`} />
+        <input type="submit" name='submit' value={`Edit`} />
       </form>
     </div>
   );
