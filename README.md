@@ -8,8 +8,8 @@ A Full Stack (MERN) Application with CRUD functionality. This project was inspir
 
 ## Live Links
 
-- [By A Thread UI](byathread-ui.onrender.com)
-- [By A Thread Backend](byathread-api.onrender.com)
+- [By A Thread UI](https://byathread-ui.onrender.com/)
+- [By A Thread Backend](https://byathread-api.onrender.com/)
 
 
 ## Access
@@ -37,7 +37,7 @@ You can fork and or clone the repo by copy and pasting the following in your ter
 ## Unsolved Issues
 
 - Need to redo submit buttons for consistency, to either say edit, create, or all to submit
-- Some pages need to be refreshed to see edits, so fixing that across the board
+- Some pages need to be refreshed to see new additions, so fixing that across the board
 
 ## Future Enhancements
 

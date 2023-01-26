@@ -15,8 +15,7 @@ function Todo() {
   });
 
   const deleteTheTodo = () => {
-    deleteTodo(id)
-    nav('/todos')
+    deleteTodo(id).then(() => nav('/todos'))
   }
   return (
     <div className="todo-card">

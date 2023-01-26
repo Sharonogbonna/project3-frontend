@@ -16,8 +16,7 @@ export default function Grocery() {
   });
 
   const deleteTheGrocery = () => {
-    deleteGrocery(id);
-    nav("/grocerylist");
+    deleteGrocery(id).then(() => nav("/grocerylist"));
   };
 
   return (

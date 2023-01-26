@@ -15,8 +15,7 @@ export default function EditGrocery(){
     const editTheGrocery = e => {
         e.preventDefault()
          const updatedGrocery = {item: e.target.item.value, brand: e.target.brand.value, store: e.target.store.value, unit: e.target.unit.value, quantity: e.target.quantity.value, isPurchased: e.target.isPurchased.checked}
-        editGrocery(id, updatedGrocery)
-        nav(`/this-grocery/${id}`)
+        editGrocery(id, updatedGrocery).then(() => nav(`/this-grocery/${id}`))
     }
   return (
     <div id='form'>

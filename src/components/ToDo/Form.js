@@ -15,8 +15,7 @@ export default function Form({ props }){
             created: Date.now()
         }
         if(props._id){
-            editTodo(props._id, todo)
-            nav(`/this-todo/${id}`)
+            editTodo(props._id, todo).then(() => nav(`/this-todo/${id}`))
         }else{
             createTodo(todo)
             nav('/todos')

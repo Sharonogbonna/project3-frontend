@@ -9,8 +9,7 @@ export default function CreateTodo() {
         e.preventDefault()
         const todo = {title: e.target.title.value, description: e.target.description.value, 
         complete: false, due: e.target.due.value, created: Date.now()}
-        createTodo(todo)
-        nav('/todos')
+        createTodo(todo).then(() => nav('/todos'))
     }
     const closeMenu = () => {
         setCreateButton(false);

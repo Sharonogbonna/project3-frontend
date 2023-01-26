@@ -14,8 +14,7 @@ const Wish = () => {
   });
 
   const deleteTheWish = () => {
-    deleteWish(id);
-    nav("/wishlist");
+    deleteWish(id).then(() => nav("/wishlist"));
   };
 
   return (

@@ -12,7 +12,7 @@ export default function CreateGrocery() {
       e.preventDefault()
         const grocery = {item: e.target.item.value, brand: e.target.brand.value, isPurchased: false, store: e.target.store.value, unit: e.target.unit.value, quantity: e.target.quantity.value}
         createGrocery(grocery)
-        nav('/grocerylist')
+        .then(() => nav('/grocerylist'))
     }
 
 return(

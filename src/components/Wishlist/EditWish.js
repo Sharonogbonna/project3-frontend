@@ -21,8 +21,7 @@ const EditWish = () => {
           reason: e.target.reason.value,
           link: e.target.link.value,
           received: e.target.received.checked}
-        editWish(id, updatedWish)
-        nav(`/this-wish/${id}`)
+        editWish(id, updatedWish).then(() => nav(`/this-wish/${id}`))
     }
 
   return (

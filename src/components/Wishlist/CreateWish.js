@@ -20,8 +20,7 @@ const CreateWish = () => {
       link: e.target.link.value,
       received: false
     };
-    createWish(wish);
-    nav("/wishlist");
+    createWish(wish).then(() => nav("/wishlist"));
   };
 
   return (
