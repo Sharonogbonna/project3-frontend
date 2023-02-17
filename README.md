@@ -1,7 +1,7 @@
 # By A Thread
 
 ## By Sharon Ogbonna
-A Full Stack (MERN) Application with CRUD functionality. This project was inspired by [Notion](https://www.notion.so/), an organizational app. I named it By A Thread because sometimes you feel like that all that is holding your life together and that is okay. Hopefully this app can help with that. This repo works best with [this repo backend](https://github.com/Sharonogbonna/project3-backend). This app has size responsive styling - a big focus of mine - and a '90s' arcade design and color scheme.
+A Full Stack (MERN) Application with CRUD functionality. This project was inspired by [Notion](https://www.notion.so/), an organizational app. I named it By A Thread because sometimes you feel like that all that is holding your life together and that is okay. Hopefully this app can help with that. This repo works best with [this backend repo](https://github.com/Sharonogbonna/project3-backend). This app has size responsive styling - a big focus of mine - and a '90s' arcade design and color scheme.
 
 #### Desktop Dashboard View
 ![Dashboard](./public/dashboard.png)
